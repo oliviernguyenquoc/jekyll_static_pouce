@@ -1,0 +1,28 @@
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "material"
+
+exclude:
+  - "/assets/"
+  - "/bower_components/"
+  - "bower.json"
+
+gems: [jekyll-assets, uglifier, jekyll-admin]
+
+assets:
+  digest: true
+  assets:
+    - "*.js"
+    - "*.css"
+    - "*.jpg"
+    - "*.png"
+  sources:
+    - _assets/js
+    - _assets/css
+    - _assets/img
+    - _assets/bower/jquery/dist
+  features:
+    automatic_img_size: false
