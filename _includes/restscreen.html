@@ -74,69 +74,45 @@
 <div class="section row" id="block2parts">
 	<div class="col s12 m9">
 		<h4 class="center">Les écoles participantes et les sponsors</h4>
-		<!-- TODO: Must add for loop -->
 		<div class="row valign-wrapper">
-			<div class="col s12 m2">
-				{% img ecoles/audencia %}
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/centrale_lille %}
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/centrale_marseille %}
-			</div>
-			<div class="col s12 m2">
-				<img class="responsive-img valign" data-caption="Le Pouce d'Or : Une initive crée à l'école Centrale Nantes" src="assets/img/ecoles/centrale_nantes_marqued.jpg">
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/centrale_lyon %}
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/ecam_lyon %}
-			</div>
+		{% for image in site.data.ecoles.name %}
+			{% assign loopindex = forloop.index | modulo : 6 %}
+			{% if loopindex == 1 and forloop.index != 1 and forloop.rindex < 6 %}
+				{% case forloop.rindex %}
+					{% when 1 %}
+						<div class="col s12 m2 offset-m5">
+							<img src="/{{ site.data.ecoles.imagefolder }}/{{ image }}" class="responsive-img valign">
+						</div>
+					{% when 2 %}
+						<div class="col s12 m2 offset-m4">
+							<img src="/{{ site.data.ecoles.imagefolder }}/{{ image }}" class="responsive-img valign">
+						</div>
+					{% when 3 %}
+						<div class="col s12 m2 offset-m3">
+							<img src="/{{ site.data.ecoles.imagefolder }}/{{ image }}" class="responsive-img valign">
+						</div>
+					{% when 4 %}
+						<div class="col s12 m2 offset-m2">
+							<img src="/{{ site.data.ecoles.imagefolder }}/{{ image }}" class="responsive-img valign">
+						</div>
+					{% when 5 %}
+						<div class="col s12 m2 offset-m1">
+							<img src="/{{ site.data.ecoles.imagefolder }}/{{ image }}" class="responsive-img valign">
+						</div>
+				{% endcase %}
+			{% else %}
+				<div class="col s12 m2">
+					<img src="/{{ site.data.ecoles.imagefolder }}/{{ image }}" class="responsive-img valign">
+				</div>
+			{% endif %}
+
+			{% if loopindex == 1 and forloop.index != 1 %}
+				</div>
+				<div class="row valign-wrapper">
+			{% endif %}
+		{% endfor %}
 		</div>
-		<div class="row valign-wrapper">
-			<div class="col s12 m2">
-				{% img ecoles/em_normandie %}
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/ensica %}
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/ensan %}
-			</div>
-			<div class="col s12 m2">
-				<img class="responsive-img valign" src="assets/img/ecoles/estp.jpeg">
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/mines_nantes %}
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/mines_st_etienne %}
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/oniris %}
-			</div>
-		</div>
-		<div class="row valign-wrapper">
-			<div class="col s12 m2 offset-m4">
-				{% img ecoles/centrale_supelec %}
-			</div>
-			<div class="col s12 m2">
-				{% img ecoles/supoptique %}
-			</div>
-		</div>
-           	<!-- {% img ecoles/audencia %}
-			{% img ecoles/centrale_lyon %}
-			{% img ecoles/droit_lille %}
-			{% img ecoles/ensa %}
-			{% img ecoles/estp.jpeg %}
-			{% img ecoles/inp_grenoble %}
-			{% img ecoles/mines_nantes %}
-			{% img ecoles/mines_paris %}
-			{% img ecoles/mines_st_etienne %}
-			{% img ecoles/polytechnique %}
-			{% img ecoles/sciencespo_paris %} -->
+<!-- 		<img class="responsive-img valign" data-caption="Le Pouce d'Or : Une initive crée à l'école Centrale Nantes" src="assets/img/ecoles/centrale_nantes_marqued.jpg"> -->
 	</div>
 	<div class="col s12 m3">
 		<h4 class="center">Réseaux</h4>

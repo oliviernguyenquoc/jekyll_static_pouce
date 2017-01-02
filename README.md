@@ -5,8 +5,16 @@ This project was done with Jekyll.
 ## TODO
 
 * Replace few full paths to jekyll-assets paths
-* Optimize compression css / js + img + one file ...
 * Add for loop for school logos & add class = responsive-img valign (size and valign)
+* Optimize compression css / js + img + one file ...
+
+Advices: (source: https://www.aerobatic.com/blog/jekyll-assets-bootstrap)
+
+* GZip compression
+* Far future Cache-Control header set to public, max-age=31557600 (1 year)
+* Consolidated multiple css and js files into these two bundled downloads
+* Eliminated unnecessary Bootstrap CSS and JavaScript components reducing download sizes
+* Served off a global CDN (CloudFront)
 
 ## Install
 
