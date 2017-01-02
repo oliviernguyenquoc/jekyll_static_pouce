@@ -178,12 +178,12 @@ footer.page-footer {
   width: 100%;
 }
 
-.restscreen a.twitter-timeline{
+.schools a.twitter-timeline{
   text-align: center;
 
 }
 
-.restscreen iframe.twitter-timeline{ 
+.schools iframe.twitter-timeline{ 
   width: 90% !important;
   height: 50vh !important;
 }
