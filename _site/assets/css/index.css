@@ -40,6 +40,10 @@ footer.page-footer {
   margin-left: 0px !important;
 }
 
+.section {
+  width: 80%;
+}
+
 /* ------------------------- */
 /* --- app.firstscreen.component.css --- */
 /* ------------------------- */
@@ -54,7 +58,7 @@ footer.page-footer {
 }
   
 .firstscreen .parallax-container .section {
-  width: 100%;
+  width: 100% !important;
 }
 
 .firstscreen .parallax{
@@ -198,7 +202,6 @@ footer.page-footer {
 /* ------------------------- */
 
 .review{
-  width: 80%;
   margin-top: 2em;
   padding-top: 2.5em;
 	font-family: Roboto-BoldItalic;
