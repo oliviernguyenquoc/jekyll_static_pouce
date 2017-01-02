@@ -1,13 +1,19 @@
 <div class="col s12 m9">
+
 	<h4 class="center">Les écoles participantes et les sponsors</h4>
+
 	<div class="row valign-wrapper">
 	{% for schoolName in site.data.ecoles.name %}
+
 		<!-- Get the number of the row to put next school image (From 1 to 6) -->
 		{% assign loopindex = forloop.index - 1 | modulo : 6 %}
+
 		<!-- {{ forloop.index }}//
 		{{ loopindex }} -->
 		<!-- If we begin a new row but not the first one but the last one // It's the LAST row ! -->
 		{% if loopindex == 1 and forloop.index != 0 and forloop.rindex < 6 %}
+
+			<!-- How many image left there are -->
 			{% case forloop.rindex %}
 				{% when 1 %}
 					<div class="col s12 m2 offset-m5">
@@ -30,9 +36,16 @@
 						<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
 					</div>
 			{% endcase %}
+
+		<!-- Else it's the last row but not the first image-->
+		{% elsif loopindex != 1 and forloop.index != 0 and forloop.rindex < 6 %}
+			<div class="col s12 m2 no-margin-left">
+				<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
+			</div>
+
 		<!-- Else it's not the last row -->
 		{% else %}
-			<div class="col s12 m2 no-margin-left">
+			<div class="col s12 m2">
 				<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
 			</div>
 		{% endif %}
@@ -42,10 +55,13 @@
 			</div>
 			<div class="row valign-wrapper">
 		{% endif %}
+
 	{% endfor %}
+
 	</div>
-<!-- 		<img class="responsive-img valign" data-caption="Le Pouce d'Or : Une initive crée à l'école Centrale Nantes" src="assets/img/ecoles/centrale_nantes_marqued.jpg"> -->
+
 </div>
+
 <div class="col s12 m3">
 	<h4 class="center">Réseaux</h4>
 	<div align="center">
