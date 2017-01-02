@@ -1,0 +1,61 @@
+<div class="col s12 m9">
+	<h4 class="center">Les écoles participantes et les sponsors</h4>
+	<div class="row valign-wrapper">
+	{% for schoolName in site.data.ecoles.name %}
+		<!-- Get the number of the row to put next school image (From 1 to 6) -->
+		{% assign loopindex = forloop.index | modulo : 6 %}
+		<!-- If we begin a new row but not the first one but the last one // It's the LAST row ! -->
+		{% if loopindex == 1 and forloop.index != 1 and forloop.rindex < 6 %}
+			{% case forloop.rindex %}
+				{% when 1 %}
+					<div class="col s12 m2 offset-m5">
+						<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
+					</div>
+				{% when 2 %}
+					<div class="col s12 m2 offset-m4">
+						<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
+					</div>
+				{% when 3 %}
+					<div class="col s12 m2 offset-m3">
+						<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
+					</div>
+				{% when 4 %}
+					<div class="col s12 m2 offset-m2">
+						<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
+					</div>
+				{% when 5 %}
+					<div class="col s12 m2 offset-m1">
+						<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
+					</div>
+			{% endcase %}
+		<!-- Else it's not the last row -->
+		{% else %}
+			<div class="col s12 m2">
+				<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
+			</div>
+		{% endif %}
+
+		<!-- If we begin a new row but not the first one -->
+		{% if loopindex == 1 and forloop.index != 1 %}
+			</div>
+			<div class="row valign-wrapper">
+		{% endif %}
+	{% endfor %}
+	</div>
+<!-- 		<img class="responsive-img valign" data-caption="Le Pouce d'Or : Une initive crée à l'école Centrale Nantes" src="assets/img/ecoles/centrale_nantes_marqued.jpg"> -->
+</div>
+<div class="col s12 m3">
+	<h4 class="center">Réseaux</h4>
+	<div align="center">
+		<a class="twitter-timeline" href="https://twitter.com/search?q=%23poucedor" data-widget-id="384379510562365440">Tweets concernant "#poucedor"</a>
+	</div>
+	<br/>
+	<div align="center">
+		<div id="fb-root"></div>
+		<div class="fb-page" data-href="https://www.facebook.com/poucedor" data-small-header="false" data-width="210px" data-height="100px" data-hide-cover="false" data-show-facepile="false" data-show-posts="false">
+			<div class="fb-xfbml-parse-ignore">
+				<blockquote cite="https://www.facebook.com/poucedor"><a href="https://www.facebook.com/poucedor">Pouce d&#039;Or</a></blockquote>
+			</div>
+		</div>
+	</div>
+</div>
