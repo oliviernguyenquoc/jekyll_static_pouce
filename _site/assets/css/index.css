@@ -35,6 +35,11 @@ footer.page-footer {
   position: absolute;
 }
 
+.no-margin-left
+{
+  margin-left: 0px !important;
+}
+
 /* ------------------------- */
 /* --- app.firstscreen.component.css --- */
 /* ------------------------- */

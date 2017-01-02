@@ -3,9 +3,11 @@
 	<div class="row valign-wrapper">
 	{% for schoolName in site.data.ecoles.name %}
 		<!-- Get the number of the row to put next school image (From 1 to 6) -->
-		{% assign loopindex = forloop.index | modulo : 6 %}
+		{% assign loopindex = forloop.index - 1 | modulo : 6 %}
+		<!-- {{ forloop.index }}//
+		{{ loopindex }} -->
 		<!-- If we begin a new row but not the first one but the last one // It's the LAST row ! -->
-		{% if loopindex == 1 and forloop.index != 1 and forloop.rindex < 6 %}
+		{% if loopindex == 1 and forloop.index != 0 and forloop.rindex < 6 %}
 			{% case forloop.rindex %}
 				{% when 1 %}
 					<div class="col s12 m2 offset-m5">
@@ -30,13 +32,13 @@
 			{% endcase %}
 		<!-- Else it's not the last row -->
 		{% else %}
-			<div class="col s12 m2">
+			<div class="col s12 m2 no-margin-left">
 				<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
 			</div>
 		{% endif %}
 
 		<!-- If we begin a new row but not the first one -->
-		{% if loopindex == 1 and forloop.index != 1 %}
+		{% if loopindex == 0 and forloop.index != 1 %}
 			</div>
 			<div class="row valign-wrapper">
 		{% endif %}

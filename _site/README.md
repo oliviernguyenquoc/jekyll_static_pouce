@@ -22,3 +22,9 @@ Advices: (source: https://www.aerobatic.com/blog/jekyll-assets-bootstrap)
 * Install Jekyll : 'gem install jekyll'
 * Copy paste the project
 * Execute 'gem install jekyll-assets uglifier jekyll-admin'
+
+# How to add a school in the school list
+
+* Add the .png or .jpg file in assets/img/ecoles folder
+* Add in the data list in _data/ecoles.yml
+* That's it !
