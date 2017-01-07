@@ -6,7 +6,8 @@ $(".clock").TimeCircles({
 	time: {
 		Days: { 
 			color: "#009688",
-			text: "Jour"
+			text: "Jour",
+			show: false
 		},
     	Hours: { 
     		color: "#009688",
@@ -21,4 +22,14 @@ $(".clock").TimeCircles({
     		text: "Secondes"
 		}
 	}
-}); 
+});
+
+var date1 = new Date();
+var datadate = $(".clock_day").attr( 'data-date' );
+var date2 = Date.parse(datadate);
+var diff = new Date(date2 - date1);
+var days = Math.floor(diff / 1000 / 60 / 60 / 24);
+
+$(".clock_day").replaceWith(
+	'<span class="clock_day" style="font-size: 100px;">'+ days +'</span>'
+);
