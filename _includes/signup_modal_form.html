@@ -10,58 +10,99 @@
 			Les mails et numéros de téléphone n'apparaîtront nulle part sur ce site. 
 		</blockquote>
 		
-		<form action="" method="POST" class="fos_user_registration_register">
+		<form action="" method="POST" class="registration_form" id="registration_form">
 
 			<div class="row">
-
 				<div class="col s12 m12 input-field">
-					<input placeholder="prenom.nom@ecole.fr" id="email" type="text" class="validate">
+					<input 
+						placeholder="prenom.nom@ecole.fr" 
+						id="email" 
+						name="email" 
+						type="text" 
+						class="validate"
+						data-error=".errorTxt1"
+						required>
 					<label for="email">Adresse e-mail</label>
+					<div class="errorTxt1"></div>
 				</div>
 
 				<div class="col s12 m6 input-field">
-					<input placeholder="*********" id="plainPasswordFirst" type="text" class="validate">
+					<input 
+						placeholder="*********" 
+						id="plainPasswordFirst" 
+						name="plainPasswordFirst" 
+						type="password" 
+						class="validate" 
+						required>
 					<label for="plainPasswordFirst">Mot de passe</label>
+					<div class="errorTxt2"></div>
 				</div>
 
 				<div class="col s12 m6 input-field">
-					<input placeholder="*********" id="plainPasswordSecond" type="text" class="validate">
+					<input 
+						placeholder="*********" 
+						id="plainPasswordSecond"
+						name="plainPasswordSecond"
+						type="password" 
+						class="validate" 
+						required>
 					<label for="plainPasswordSecond">Vérification</label>
+					<div class="errorTxt3"></div>
 				</div>
-
 			</div>
 
 			<div class="row">
-
 				<div class="col s12 m4 input-field ">
-					<input id="first_name" type="text" class="validate">
+					<input 
+						id="first_name"
+						name="first_name"
+						type="text" 
+						class="validate" 
+						required>
 					<label for="first_name">Prénom</label>
+					<div class="errorTxt4"></div>
 				</div>
 
 				<div class="col s12 m4 input-field ">
-					<input id="last_name" type="text" class="validate">
+					<input 
+						id="last_name"
+						name="last_name" 
+						type="text" 
+						class="validate" 
+						required>
 					<label for="last_name">Nom</label>
+					<div class="errorTxt5"></div>
 				</div>
 
 				<div class="col s12 m4 input-field">
-					<select>
+					<select 
+						id="sex"
+						name="sex"
+						required>
 						<option value="" disabled selected>Choisissez votre sexe</option>
-						<option value="1">Homme</option>
-						<option value="2">Femme</option>
+						<option value="Homme">Homme</option>
+						<option value="Femme">Femme</option>
 				    </select>
 				</div>
 
 				<div class="input-field col s12 m12">
-					<input id="telephone" type="text" class="validate">
+					<input 
+						id="telephone" 
+						name="telephone"
+						type="text" 
+						class="validate" 
+						required>
 					<label for="telephone">Numéro de téléphone</label>
 				</div>
-
 			</div>
 
 			<div class="row">
 
 				<div class="input-field col s12 m12">
-					<select>
+					<select 
+						id="unversity"
+						name="university"
+						required>
 						<option value="" disabled selected>Choisissez votre école ou université</option>
 						<option value="1"></option>
 				    </select>
@@ -69,14 +110,22 @@
 
 			</div>
 
-			<p>
-				<input type="checkbox" id="CGU" required />
-				<label for="CGU">J'ai lu et j'accepte les conditions générales du site disponible <a href={{path('pouce_site_conditions_générales')}}>ici</a>. Je déclare l'exactitude des informations rentrées ci-dessus.</label>
-			</p>
+			<div class="row">
+				<input 
+					type="checkbox"
+					id="CGU"
+					name="CGU"
+					required>
+				<label for="CGU">J'ai lu et j'accepte les conditions générales du site et le règlement du concours, disponibles <a href="">ici</a>. Je déclare l'exactitude des informations rentrées ci-dessus.</label>
+			</div>
 		</form>
 	</div>
 	<div class="modal-footer">
-		<button class="modal-action modal-close btn waves-effect waves-light" type="submit" value="" />Enregistrer
+		<button 
+			class="modal-action modal-close btn waves-effect waves-light"
+			type="submit"
+			id="submit"
+			value=""/>Enregistrer
 			<i class="material-icons right">send</i>
 		</button>
 	</div>
