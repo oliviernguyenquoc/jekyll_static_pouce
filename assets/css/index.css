@@ -115,6 +115,12 @@ footer.page-footer {
   box-shadow: 0 1px 0 0 #ff4081;
 }
 
+/* Add red star before label of required inputs */
+.required:before {
+  content: "* ";
+  color: red;
+}
+
 /*
 .firstscreen .header{
   margin-top: 2em;

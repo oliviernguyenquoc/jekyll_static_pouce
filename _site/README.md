@@ -4,6 +4,10 @@ This project was done with Jekyll.
 
 ## TODO
 
+* Registration form :
+	* Send form with AJAX
+	* Fill university with AJAX calls
+* Pre-registration form
 * Replace few full paths to jekyll-assets paths
 * Add for loop for school logos & add class = responsive-img valign (size and valign)
 * Optimize compression css / js + img + one file ...
