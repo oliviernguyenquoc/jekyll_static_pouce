@@ -1,0 +1,83 @@
+<div id="modal1" class="modal modal-fixed-footer">
+	<div class="modal-content">
+		<h4>Inscription au site du Pouce d'Or</h4>
+
+		<blockquote style="margin-left:70px;">
+			Remplis bien tous les champs pour pouvoir t'inscire.
+			<p>
+				Cela ne t'engage à rien. L'inscription à la course se fait dans un second temps (lors de la formation du binôme).
+			</p>
+			Les mails et numéros de téléphone n'apparaîtront nulle part sur ce site. 
+		</blockquote>
+		
+		<form action="" method="POST" class="fos_user_registration_register">
+
+			<div class="row">
+
+				<div class="col s12 m12 input-field">
+					<input placeholder="prenom.nom@ecole.fr" id="email" type="text" class="validate">
+					<label for="email">Adresse e-mail</label>
+				</div>
+
+				<div class="col s12 m6 input-field">
+					<input placeholder="*********" id="plainPasswordFirst" type="text" class="validate">
+					<label for="plainPasswordFirst">Mot de passe</label>
+				</div>
+
+				<div class="col s12 m6 input-field">
+					<input placeholder="*********" id="plainPasswordSecond" type="text" class="validate">
+					<label for="plainPasswordSecond">Vérification</label>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col s12 m4 input-field ">
+					<input id="first_name" type="text" class="validate">
+					<label for="first_name">Prénom</label>
+				</div>
+
+				<div class="col s12 m4 input-field ">
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">Nom</label>
+				</div>
+
+				<div class="col s12 m4 input-field">
+					<select>
+						<option value="" disabled selected>Choisissez votre sexe</option>
+						<option value="1">Homme</option>
+						<option value="2">Femme</option>
+				    </select>
+				</div>
+
+				<div class="input-field col s12 m12">
+					<input id="telephone" type="text" class="validate">
+					<label for="telephone">Numéro de téléphone</label>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="input-field col s12 m12">
+					<select>
+						<option value="" disabled selected>Choisissez votre école ou université</option>
+						<option value="1"></option>
+				    </select>
+				</div>
+
+			</div>
+
+			<p>
+				<input type="checkbox" id="CGU" required />
+				<label for="CGU">J'ai lu et j'accepte les conditions générales du site disponible <a href={{path('pouce_site_conditions_générales')}}>ici</a>. Je déclare l'exactitude des informations rentrées ci-dessus.</label>
+			</p>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button class="modal-action modal-close btn waves-effect waves-light" type="submit" value="" />Enregistrer
+			<i class="material-icons right">send</i>
+		</button>
+	</div>
+</div>

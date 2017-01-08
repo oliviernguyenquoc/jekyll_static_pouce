@@ -58,7 +58,7 @@ footer.page-footer {
 }
   
 .firstscreen .parallax-container .section {
-  width: 100% !important;
+  /*width: 100% !important;*/
 }
 
 .firstscreen .parallax{
@@ -66,7 +66,7 @@ footer.page-footer {
 }
 	
 .firstscreen .parallax img{
-	display: block;
+	/*display: block;*/
 	width: 100%;
   height: inherit;
 /*    transform: translate3d(-50%, 350px, 0px);

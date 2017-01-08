@@ -56,21 +56,14 @@ footer.page-footer {
 	background: rgba(47,48,54,0.30);
 	border: 1px solid #979797;
 }
-  
-.firstscreen .parallax-container .section {
-  width: 100% !important;
-}
 
 .firstscreen .parallax{
   overflow: hidden;
 }
 	
 .firstscreen .parallax img{
-	display: block;
 	width: 100%;
   height: inherit;
-/*    transform: translate3d(-50%, 350px, 0px);
-    filter:blur(2px);*/
 }
 
 .firstscreen #title{

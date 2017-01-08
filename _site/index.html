@@ -31,7 +31,7 @@ Le but : Aller le plus loin possible et revenir en stop en 48h." />
 	<link type="text/css" rel="stylesheet" href="/assets/TimeCircles-f3fcc314bfea6a6880487ac2371efb3baae722ab4cadaca86a116c8650b61198.css">
 
 	<!-- global stylesheet -->
-	<link type="text/css" rel="stylesheet" href="/assets/index-8914cf6c7f9b6f4b753a342cef0bf62a40a6b021824243ede4f8cb2c28dde5b1.css">
+	<link type="text/css" rel="stylesheet" href="/assets/index-d3036988378315db9365e76044565b1e99d43842b03c0fc851f0bfcc3f95672a.css">
 </head>
 <body>
 	<div id="top" class="scrollspy"></div>
@@ -100,13 +100,15 @@ Le but : Aller le plus loin possible et revenir en stop en 48h." />
 	</nav>
 	<div class="header-buttons" id="header-nav-buttons">                
 		<a href="#" class="btn btn-small btn-connexion transparent">Connexion</a>
-		<a href="#" class="btn btn-small btn-signup white">S'inscire</a>
+		<a href="#modal1" class="btn btn-small btn-signup white waves-effect waves-light">S'inscire</a>
+
 	</div>
 </div></div>
 
 	<div id="core-content">
-	<div class="firstscreen"><div id="index-banner" class="parallax-container">
-	<div class="no-pad-bot">
+	<div class="firstscreen"><div class="parallax-container">
+	<div class="parallax"><img src="/assets/firstscreen-d31cf09f38d233cebc11afd465d872e36cf43cca613588471bfe46f86f93b0a9.jpg" alt="Unsplashed background img 2"></div>
+	<div id="index-banner">
 		<h1 class="header center white-text text-darken-2" id="title">Le Pouce d'Or</h1>
 		<div class="row center">
 			<h5 class="header col s12 white-text">“L'essentiel, ce n'est pas d'aller loin mais de vivre une aventure extraordinaire“</h5>
@@ -118,7 +120,6 @@ Le but : Aller le plus loin possible et revenir en stop en 48h." />
 		</div> -->
 		<a id="FAB" class="center-align btn-floating btn-large waves-effect waves-light teal darken-1"><i class="large material-icons">expand_more</i></a>
 	</div>
-	<div class="parallax"><img src="/assets/firstscreen-d31cf09f38d233cebc11afd465d872e36cf43cca613588471bfe46f86f93b0a9.jpg" alt="Unsplashed background img 2"></div>
 </div></div>
 	<div class="section row center review"><div class="col s12 m4">
 	<div class="review">
@@ -174,6 +175,91 @@ Le but : Aller le plus loin possible et revenir en stop en 48h." />
 </div>
 <div class="left-align light col s12 m6">
 	<h5>Créer ton compte et pars à l’aventure</h5>
+	<a class="waves-effect waves-light btn" href="#modal1">Inscris-toi</a>
+
+	<div id="modal1" class="modal modal-fixed-footer">
+	<div class="modal-content">
+		<h4>Inscription au site du Pouce d'Or</h4>
+
+		<blockquote style="margin-left:70px;">
+			Remplis bien tous les champs pour pouvoir t'inscire.
+			<p>
+				Cela ne t'engage à rien. L'inscription à la course se fait dans un second temps (lors de la formation du binôme).
+			</p>
+			Les mails et numéros de téléphone n'apparaîtront nulle part sur ce site. 
+		</blockquote>
+		
+		<form action="" method="POST" class="fos_user_registration_register">
+
+			<div class="row">
+
+				<div class="col s12 m12 input-field">
+					<input placeholder="prenom.nom@ecole.fr" id="email" type="text" class="validate">
+					<label for="email">Adresse e-mail</label>
+				</div>
+
+				<div class="col s12 m6 input-field">
+					<input placeholder="*********" id="plainPasswordFirst" type="text" class="validate">
+					<label for="plainPasswordFirst">Mot de passe</label>
+				</div>
+
+				<div class="col s12 m6 input-field">
+					<input placeholder="*********" id="plainPasswordSecond" type="text" class="validate">
+					<label for="plainPasswordSecond">Vérification</label>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col s12 m4 input-field ">
+					<input id="first_name" type="text" class="validate">
+					<label for="first_name">Prénom</label>
+				</div>
+
+				<div class="col s12 m4 input-field ">
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">Nom</label>
+				</div>
+
+				<div class="col s12 m4 input-field">
+					<select>
+						<option value="" disabled selected>Choisissez votre sexe</option>
+						<option value="1">Homme</option>
+						<option value="2">Femme</option>
+				    </select>
+				</div>
+
+				<div class="input-field col s12 m12">
+					<input id="telephone" type="text" class="validate">
+					<label for="telephone">Numéro de téléphone</label>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="input-field col s12 m12">
+					<select>
+						<option value="" disabled selected>Choisissez votre école ou université</option>
+						<option value="1"></option>
+				    </select>
+				</div>
+
+			</div>
+
+			<p>
+				<input type="checkbox" id="CGU" required />
+				<label for="CGU">J'ai lu et j'accepte les conditions générales du site disponible <a href=>ici</a>. Je déclare l'exactitude des informations rentrées ci-dessus.</label>
+			</p>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button class="modal-action modal-close btn waves-effect waves-light" type="submit" value="" />Enregistrer
+			<i class="material-icons right">send</i>
+		</button>
+	</div>
+</div>
 </div>
 </div>
 	<div class="section row block3parts"><div class="col s12 m4">
@@ -693,6 +779,7 @@ Le but : Aller le plus loin possible et revenir en stop en 48h." />
 	<!-- ################### Javascript ################### -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/assets/materialize-82f1ccdb904761689a1ac2326c4ea4188e5ee8e403b75a38386553595294d0c0.js"></script>
+	<script type="text/javascript" src="/assets/index-a62095092cdbaa4a8ba457f46fad2f37adc110231c87149ebc9ae1bc8fc7cb72.js"></script>
 	<script type="text/javascript" src="/assets/TimeCircles-394ed29d48941f0ed9b3ebfe705b9b4b18feee751acc97b64e5206fa3fdae073.js"></script>
 	<script type="text/javascript" src="/assets/TimeCirclesInit-566662c671ad713e593fc29021583a396584a31dc9815a9944d36ba8ac5f9196.js"></script>
 
