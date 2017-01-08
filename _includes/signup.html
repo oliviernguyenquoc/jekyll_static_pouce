@@ -13,7 +13,47 @@
 </div>
 <div class="left-align light col s12 m6">
 	<h5>Créer ton compte et pars à l’aventure</h5>
-	<a class="waves-effect waves-light btn" href="#modal1">Inscris-toi</a>
+
+	<div class="row">
+		<form action="" method="POST" class="pre_registration_form" id="pre_registration_form">
+			<div class="col s12 m12 input-field">
+				<input 
+					placeholder="prenom.nom@ecole.fr" 
+					id="email" 
+					name="email"
+					type="text">
+				<label for="email">Adresse e-mail</label>
+			</div>
+
+			<div class="col s12 m6 input-field ">
+				<input 
+					id="first_name"
+					name="first_name"
+					type="text">
+				<label for="first_name">Prénom</label>
+			</div>
+
+			<div class="col s12 m6 input-field ">
+				<input 
+					id="last_name"
+					name="last_name" 
+					type="text">
+				<label for="last_name">Nom</label>
+			</div>
+
+
+			<div class="input-field col s12 m12">
+				<input 
+					id="telephone" 
+					name="telephone"
+					type="text">
+				<label for="telephone">Numéro de téléphone</label>
+			</div>
+		</form>
+	</div>
+	<div class="right-align">
+		<a class="waves-effect waves-light btn" href="#modal1">Inscris-toi</a>
+	</div>
 
 	{% include signup_modal_form.html %}
 </div>

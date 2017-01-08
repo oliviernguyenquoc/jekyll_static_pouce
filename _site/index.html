@@ -31,7 +31,7 @@ Le but : Aller le plus loin possible et revenir en stop en 48h." />
 	<link type="text/css" rel="stylesheet" href="/assets/TimeCircles-f3fcc314bfea6a6880487ac2371efb3baae722ab4cadaca86a116c8650b61198.css">
 
 	<!-- global stylesheet -->
-	<link type="text/css" rel="stylesheet" href="/assets/index-83d679557a367e322923d27c7cd47d4714b532329c8b04b533ac0e23c4d202b2.css">
+	<link type="text/css" rel="stylesheet" href="/assets/index-80571eb8e3818864bbc45d59d36c46c32a7d04fc72872666f48f967184c4eda5.css">
 </head>
 <body>
 	<div id="top" class="scrollspy"></div>
@@ -152,7 +152,47 @@ Le but : Aller le plus loin possible et revenir en stop en 48h." />
 </div>
 <div class="left-align light col s12 m6">
 	<h5>Créer ton compte et pars à l’aventure</h5>
-	<a class="waves-effect waves-light btn" href="#modal1">Inscris-toi</a>
+
+	<div class="row">
+		<form action="" method="POST" class="pre_registration_form" id="pre_registration_form">
+			<div class="col s12 m12 input-field">
+				<input 
+					placeholder="prenom.nom@ecole.fr" 
+					id="email" 
+					name="email"
+					type="text">
+				<label for="email">Adresse e-mail</label>
+			</div>
+
+			<div class="col s12 m6 input-field ">
+				<input 
+					id="first_name"
+					name="first_name"
+					type="text">
+				<label for="first_name">Prénom</label>
+			</div>
+
+			<div class="col s12 m6 input-field ">
+				<input 
+					id="last_name"
+					name="last_name" 
+					type="text">
+				<label for="last_name">Nom</label>
+			</div>
+
+
+			<div class="input-field col s12 m12">
+				<input 
+					id="telephone" 
+					name="telephone"
+					type="text">
+				<label for="telephone">Numéro de téléphone</label>
+			</div>
+		</form>
+	</div>
+	<div class="right-align">
+		<a class="waves-effect waves-light btn" href="#modal1">Inscris-toi</a>
+	</div>
 
 	<div id="modal1" class="modal modal-fixed-footer">
 	<div class="modal-content">
@@ -205,9 +245,7 @@ Le but : Aller le plus loin possible et revenir en stop en 48h." />
 					<label for="plainPasswordSecond" class="required">Vérification</label>
 					<div class="errorTxt3"></div>
 				</div>
-			</div>
 
-			<div class="row">
 				<div class="col s12 m4 input-field ">
 					<input 
 						id="first_name"
@@ -250,9 +288,6 @@ Le but : Aller le plus loin possible et revenir en stop en 48h." />
 						required>
 					<label for="telephone" class="required">Numéro de téléphone</label>
 				</div>
-			</div>
-
-			<div class="row">
 
 				<div class="input-field col s12 m12">
 					<select 
