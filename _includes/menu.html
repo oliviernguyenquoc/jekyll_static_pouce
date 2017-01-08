@@ -1,9 +1,10 @@
 <!--start menu-->
+
 <div id="navbar" class="navbar-fixed scrollspy">
 	<a id="logo-container" href="#" class="brand-logo hide-on-med-and-down left"><img src="assets/img/Pouce_logo.png" width="202" height="50" alt="logo"/></a>
 	<nav class="transparent center" id="navcolor" role="navigation">
-		<div class="nav-wrapper">
-			<ul class="hide-on-med-and-down">
+		<div class="nav-wrapper container">
+			<ul id="nav-desktop" class="hide-on-med-and-down">
 				<li> <a href="#">L'association</a>
 				</li>
 				<li> <a href="#">Règles</a>
@@ -14,55 +15,30 @@
 				</li>
 				<li> <a href="#">Sponsors</a>
 				</li>
-			</ul>	
-
-			<div class="container">
-				<a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
-			</div>
-
-			<ul id="nav-mobile" class="side-nav">
-				<li class="no-padding">
-					<ul class="collapsible collapsible-accordion">
-						<li class="bold">
-							<a class="collapsible-header waves-effect waves-teal">Le Pouce d'Or<i class="material-icons right">arrow_drop_down</i></a>
-							<div class="collapsible-body">
-								<ul>
-									<li><a href="#">L'association</a></li>
-									<li><a href="#">Règles</a></li>
-									<li><a href="#">Conseils</a></li>
-									<li><a href="#">Liens</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</li>
-				<li class="no-padding">
-					<ul class="collapsible collapsible-accordion">
-						<li class="bold">
-							<a class="collapsible-header waves-effect waves-teal">Edition 2015<i class="material-icons right">arrow_drop_down</i></a>
-							<div class="collapsible-body" style="display: block;">
-								<ul>
-									<li><a href="#">S'incrire</a></li>
-									<li><a href="#">Inscrire son école</a></li>
-									<li><a href="#">Listes des inscrits</a></li>
-									<li><a href="#">Edition 2015</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</li>
-				<li class="bold">
-					<a href="#" class="waves-effect waves-teal">Archives</a>
-				</li>
-				<li class="bold">
-					<a href="#" class="waves-effect waves-teal">Top 25</a>
-				</li>
 			</ul>
+
+			<a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
 		</div>
 	</nav>
+
 	<div class="header-buttons" id="header-nav-buttons">                
 		<a href="#" class="btn btn-small btn-connexion transparent">Connexion</a>
 		<a href="#modal1" class="btn btn-small btn-signup white waves-effect waves-light">S'inscire</a>
 
 	</div>
+</div>
+
+<div id="side-nav">
+	<ul id="nav-mobile" class="side-nav">
+		<li> <a href="#">L'association</a>
+		</li>
+		<li> <a href="#">Règles</a>
+		</li>
+		<li> <a href="#">Conseils</a>
+		</li>
+		<li> <a href="#">Top 25</a>
+		</li>
+		<li> <a href="#">Sponsors</a>
+		</li>
+	</ul>
 </div>

@@ -106,7 +106,7 @@ footer.page-footer {
 	display: inline-block;
 }
 
-.menu nav a{
+.menu nav #nav-desktop a{
 	padding: 0 20px;
 	text-transform: uppercase;
 	color: white;
@@ -148,6 +148,10 @@ footer.page-footer {
 	border: 1px solid #FFFFFF;
 	border-radius: 2px;
 	text-transform: none;
+}
+
+.menu .side-nav{
+  padding: 0 40px;
 }
 
 /* ------------------------- */
