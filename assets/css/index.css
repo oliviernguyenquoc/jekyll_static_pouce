@@ -157,11 +157,36 @@ nav{
 
 #navbar.default {
   box-shadow: none;
+  padding-top: 20px;
+}
+
+#navbar.default #header-nav-buttons {
+  top: 34px;
+}
+
+#navbar.default a.btn-connexion {
+  color: white;
+}
+
+#navbar.default nav ul li a {
+  color: white;
 }
 
 #navbar.sticky {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   background: #ffffff;
+}
+
+#navbar.sticky #header-nav-buttons {
+  top: 14px;
+}
+
+#navbar.sticky a.btn-connexion {
+  color: black;
+}
+
+#navbar.sticky nav ul li a {
+  color: black;
 }
 
 .menu nav ul{

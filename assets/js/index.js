@@ -12,9 +12,9 @@ $(document).ready(function(){
 var menu = $('#navbar');
 
 $(window).bind('scroll', function () {
-	if ($(window).scrollTop() > 30 && menu.hasClass('default')) {
+	if ($(window).scrollTop() > 300 && menu.hasClass('default')) {
         menu.removeClass('default').addClass('sticky').fadeIn('fast');
-    } else if ($(window).scrollTop() <=  30 && menu.hasClass('sticky'))  {
+    } else if ($(window).scrollTop() <=  300 && menu.hasClass('sticky'))  {
         menu.removeClass('sticky').addClass('default').fadeIn(0);
     }
 });
