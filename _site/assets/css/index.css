@@ -72,7 +72,7 @@ footer.page-footer {
 
 
 .firstscreen #index-banner{
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .firstscreen #FAB{
@@ -144,6 +144,26 @@ footer.page-footer {
 /* ------------------------- */
 
 /* NavBar */
+
+nav{
+  box-shadow: none;
+}
+
+#navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#navbar.default {
+  box-shadow: none;
+}
+
+#navbar.sticky {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+}
+
 .menu nav ul{
 	display: inline-block;
 }
@@ -152,11 +172,6 @@ footer.page-footer {
 	padding: 0 20px;
 	text-transform: uppercase;
 	color: white;
-}
-
-.menu .navbar-fixed{
-  position: fixed;
-  width: 100%;
 }
 
 /* Scroll btn */

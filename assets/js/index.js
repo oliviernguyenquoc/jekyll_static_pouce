@@ -5,6 +5,75 @@ $(document).ready(function(){
 	$('.button-collapse').sideNav();
 });
 
+/*-----------------------------------------------------------------------------------*/
+/*	STICKY HEADER
+/*-----------------------------------------------------------------------------------*/
+
+var menu = $('#navbar');
+
+$(window).bind('scroll', function () {
+	if ($(window).scrollTop() > 30 && menu.hasClass('default')) {
+        menu.removeClass('default').addClass('sticky').fadeIn('fast');
+    } else if ($(window).scrollTop() <=  30 && menu.hasClass('sticky'))  {
+        menu.removeClass('sticky').addClass('default').fadeIn(0);
+    }
+});
+
+//X BUTTON RESIZE
+// $(document).ready(function() {
+//     var e = $("#switcher").outerHeight();
+//     $("#iframe").attr("height", $(window).height() + "px");
+//     $('#hide-demo-bar').click(function() {
+// 		$("#iframe").attr("height", $(window).height() - e + "px");
+
+// 		$('body').toggleClass('switcher-hidden');
+//         $('#switcher').toggleClass('fbar-hidden-switcher');
+//         $('#hide-demo-bar').toggleClass('fbar-hidden-btn');
+//         $('#iframe').toggleClass('fbar-top-iframe');
+
+// 		if ($('body').hasClass('switcher-hidden')) {
+// 			$("#iframe").attr("height", $(window).height() + "px");
+// 		} else {
+// 			$("#iframe").attr("height", $(window).height() - e + "px");
+// 		}
+// 	});
+// 	$(window).resize(function () {
+// 		if ($('body').hasClass('switcher-hidden')) {
+// 			$("#iframe").attr("height", $(window).height() + "px");
+// 		} else {
+// 			$("#iframe").attr("height", $(window).height() - e + "px");
+// 		}
+// 	}).resize();
+// 		$("#header-bar").hide();
+// 		clicked = "desktop";
+// 		var t = {
+// 			desktop: "100%",
+// 			tabletlandscape: 1040,
+// 			tabletportrait: 788,
+// 			mobilelandscape: 500,
+// 			mobileportrait: 340,
+// 			placebo: 0
+// 		};
+// 		$(".responsive a").on("click", function() {
+// 			var e = $(this);
+// 			for (device in t) {
+// 				console.log(device);
+// 				console.log(t[device]);
+// 				if (e.hasClass(device)) {
+// 					clicked = device;
+// 					$("#iframe").width(t[device]);
+// 					if (clicked == device) {
+// 						$(".responsive a").removeClass("active");
+// 						e.addClass("active")
+// 					}
+// 				}
+// 			}
+// 			return false
+// 		});
+
+// });
+
+
 //Submit registration form in modal
 // $(function() {
 // 	$("button#submit").click(function(){
