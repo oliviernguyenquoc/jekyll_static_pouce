@@ -1,3 +1,7 @@
+/*-----------------------------------------------------------------------------------*/
+/*	Initialize Modals, Select fields, Parallax effect, Side navs
+/*-----------------------------------------------------------------------------------*/
+
 $(document).ready(function(){
 	$('#modal1').modal();
 	$('select').material_select();
@@ -50,25 +54,58 @@ $(".signup a#pre_signup_btn").on('click', function() {
     loadSerializedData('registration_form', data)
 });
 
+/*-----------------------------------------------------------------------------------*/
+/*	Serialize and send registration
+/*-----------------------------------------------------------------------------------*/
+
+// Function to serialize registration form to the JSON needed for the Pouce d'Or API
+function serializeRegistrationForm()
+{
+	var json_mock = new Object();
+	
+	json_mock.fos_user_registration_form = new Object();
+	json_mock.fos_user_registration_form.email = $('form#registration_form input#email').val();
+	json_mock.fos_user_registration_form.plainPassword = new Object();
+	json_mock.fos_user_registration_form.plainPassword.first = $('form#registration_form input#plainPasswordFirst').val();
+	json_mock.fos_user_registration_form.plainPassword.second = $('form#registration_form input#plainPasswordSecond').val();
+	json_mock.fos_user_registration_form.first_name = $('form#registration_form input#first_name').val();
+	json_mock.fos_user_registration_form.last_name = $('form#registration_form input#last_name').val();
+	json_mock.fos_user_registration_form.sex = $('form#registration_form select#sex').val();
+	json_mock.fos_user_registration_form.school = $('form#registration_form select#university').val();
+	json_mock.fos_user_registration_form.telephone = $('form#registration_form input#telephone').val();
+
+	json_data = JSON.stringify(json_mock);
+
+	return json_data;
+}
+
 
 //Submit registration form in modal
-// $(function() {
-// 	$("button#submit").click(function(){
+$(function() {
+	$("button#submit").click(function(){
+		form_data_JSON = serializeRegistrationForm();
+ 		console.log(form_data_JSON);
+
 // 		$.ajax({
 // 			type: "POST",
-// 			url: "",
-// 			data: $('form.registration_form').serialize(),
+// 			url: "/api/v1/users",
+// 			data: form_data_JSON,
 // 			dataType: 'json',
 // 			success: function(msg){
 // 				$("#thanks").html(msg)
 // 				$("#form-content").modal('hide'); 
 // 			},
 // 			error: function(){
-// 				alert("failure");
+// 				alert("Impossible de vous enregistrer. Merci de revenir plus tard.");
 // 			}
 // 		});
-// 	});
-// });
+
+	});
+});
+
+/*-----------------------------------------------------------------------------------*/
+/*	Validate regitration form
+/*-----------------------------------------------------------------------------------*/
 
 // Validation registration form
 $(document).ready(function(){
