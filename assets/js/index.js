@@ -19,60 +19,36 @@ $(window).bind('scroll', function () {
     }
 });
 
+/*-----------------------------------------------------------------------------------*/
+/*	COPY FRONT FORM DATA TO REAL FORM
+/*-----------------------------------------------------------------------------------*/
 
-//X BUTTON RESIZE
-// $(document).ready(function() {
-//     var e = $("#switcher").outerHeight();
-//     $("#iframe").attr("height", $(window).height() + "px");
-//     $('#hide-demo-bar').click(function() {
-// 		$("#iframe").attr("height", $(window).height() - e + "px");
+// Function to load serialized data
+function loadSerializedData(formId, data)
+{
+	var tmp = data.split('&'), dataObj = {};
 
-// 		$('body').toggleClass('switcher-hidden');
-//         $('#switcher').toggleClass('fbar-hidden-switcher');
-//         $('#hide-demo-bar').toggleClass('fbar-hidden-btn');
-//         $('#iframe').toggleClass('fbar-top-iframe');
+	// Bust apart the serialized data string into an obj
+	for (var i = 0; i < tmp.length; i++)
+	{
+		var keyValPair = tmp[i].split('=');
+		dataObj[keyValPair[0]] = keyValPair[1];
+	}
 
-// 		if ($('body').hasClass('switcher-hidden')) {
-// 			$("#iframe").attr("height", $(window).height() + "px");
-// 		} else {
-// 			$("#iframe").attr("height", $(window).height() - e + "px");
-// 		}
-// 	});
-// 	$(window).resize(function () {
-// 		if ($('body').hasClass('switcher-hidden')) {
-// 			$("#iframe").attr("height", $(window).height() + "px");
-// 		} else {
-// 			$("#iframe").attr("height", $(window).height() - e + "px");
-// 		}
-// 	}).resize();
-// 		$("#header-bar").hide();
-// 		clicked = "desktop";
-// 		var t = {
-// 			desktop: "100%",
-// 			tabletlandscape: 1040,
-// 			tabletportrait: 788,
-// 			mobilelandscape: 500,
-// 			mobileportrait: 340,
-// 			placebo: 0
-// 		};
-// 		$(".responsive a").on("click", function() {
-// 			var e = $(this);
-// 			for (device in t) {
-// 				console.log(device);
-// 				console.log(t[device]);
-// 				if (e.hasClass(device)) {
-// 					clicked = device;
-// 					$("#iframe").width(t[device]);
-// 					if (clicked == device) {
-// 						$(".responsive a").removeClass("active");
-// 						e.addClass("active")
-// 					}
-// 				}
-// 			}
-// 			return false
-// 		});
+	// Loop thru form and assign each HTML tag the appropriate value
+	$('#' + formId + ' :input').each(function(index, element) {
+		if (dataObj[$(this).attr('name')])
+			$(this).val(dataObj[$(this).attr('name')]);
+	});
 
-// });
+	Materialize.updateTextFields();
+}
+
+
+$(".signup a#pre_signup_btn").on('click', function() {
+    var data = $('#pre_registration_form').serialize();
+    loadSerializedData('registration_form', data)
+});
 
 
 //Submit registration form in modal
