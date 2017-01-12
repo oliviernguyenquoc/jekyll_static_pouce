@@ -72,7 +72,7 @@ footer.page-footer {
 
 
 .firstscreen #index-banner{
-  padding-top: 120px;
+  padding-top: 130px;
 }
 
 .firstscreen #FAB{
@@ -158,35 +158,57 @@ nav{
 #navbar.default {
   box-shadow: none;
   padding-top: 20px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #navbar.default #header-nav-buttons {
   top: 34px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-#navbar.default a.btn-connexion {
+#navbar.default a.btn-connexion, #navbar.default nav ul li a  {
   color: white;
-}
-
-#navbar.default nav ul li a {
-  color: white;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #navbar.sticky {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   background: #ffffff;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #navbar.sticky #header-nav-buttons {
   top: 14px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-#navbar.sticky a.btn-connexion {
+#navbar.sticky a.btn-connexion, #navbar.sticky nav ul li a {
   color: black;
-}
-
-#navbar.sticky nav ul li a {
-  color: black;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .menu nav ul{

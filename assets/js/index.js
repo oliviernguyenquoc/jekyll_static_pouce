@@ -19,6 +19,7 @@ $(window).bind('scroll', function () {
     }
 });
 
+
 //X BUTTON RESIZE
 // $(document).ready(function() {
 //     var e = $("#switcher").outerHeight();
