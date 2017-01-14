@@ -7,9 +7,7 @@ This project was done with Jekyll.
 * Registration form :
 	* Send form with AJAX
 	* Fill university with AJAX calls
-* Pre-registration form
 * Replace few full paths to jekyll-assets paths
-* Add for loop for school logos & add class = responsive-img valign (size and valign)
 * Optimize compression css / js + img + one file ...
 
 Advices: (source: https://www.aerobatic.com/blog/jekyll-assets-bootstrap)
@@ -27,7 +25,10 @@ Advices: (source: https://www.aerobatic.com/blog/jekyll-assets-bootstrap)
 * Copy paste the project
 * Execute 'gem install jekyll-assets uglifier jekyll-admin'
 
-* Install Imagemagick http://imagemagick.org/script/index.php ('brew install ImageMagick' on mac if you have Homebrew)
+* Install Imagemagick http://imagemagick.org/script/index.php 
+	* Mac: 'brew install ImageMagick' if you have Homebrew
+	* Windows: Executable (.exe) in http://imagemagick.org/script/binary-releases.php#windows
+	* Unix: http://imagemagick.org/script/binary-releases.php#unix
 * Execute 'gem install mini_magic'
 
 # How to add a school in the school list
