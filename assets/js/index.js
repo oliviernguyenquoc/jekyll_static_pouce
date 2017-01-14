@@ -52,7 +52,12 @@ function loadSerializedData(formId, data)
 
 $(".signup a#pre_signup_btn").on('click', function() {
     var data = $('#pre_registration_form').serialize();
-    loadSerializedData('registration_form', data)
+    loadSerializedData('registration_form', data);
+});
+
+$("a#pre_signup_inscription_btn").on('click', function() {
+    var data = $('#pre_signup_inscription_form').serialize();
+    loadSerializedData('registration_form', data);
 });
 
 /*-----------------------------------------------------------------------------------*/

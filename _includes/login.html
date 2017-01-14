@@ -30,26 +30,30 @@
 
       <div class="title">INSCRIPTION</div>
 
-      <div class="input">
-         <label for="regname">Email</label>
-         <input type="text" name="regname" id="regname">
-         <span class="spin"></span>
-      </div>
+      <form action="" method="POST" class="pre_registration_form" id="pre_signup_inscription_form">
 
-      <div class="input">
-         <label for="regpass">Mot de passe</label>
-         <input type="password" name="regpass" id="regpass">
-         <span class="spin"></span>
-      </div>
+         <div class="input">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <span class="spin"></span>
+         </div>
 
-      <div class="input">
-         <label for="reregpass">Répétez le mot de passe</label>
-         <input type="password" name="reregpass" id="reregpass">
-         <span class="spin"></span>
-      </div>
+         <div class="input">
+            <label for="plainPasswordFirst">Mot de passe</label>
+            <input type="password" name="plainPasswordFirst" id="plainPasswordFirst">
+            <span class="spin"></span>
+         </div>
+
+         <div class="input">
+            <label for="plainPasswordSecond">Répétez le mot de passe</label>
+            <input type="password" name="plainPasswordSecond" id="plainPasswordSecond">
+            <span class="spin"></span>
+         </div>
+         
+      </form>
 
       <div class="button">
-         <button class="modal-action modal-close" id="pre_signup_inscription_btn" href="#modal1"><span>SUIVANT</span></button>
+         <a class="modal-action modal-close" id="pre_signup_inscription_btn" href="#modal1"><button><span>SUIVANT</span></button></a>
       </div>
 
 
