@@ -319,4 +319,5 @@ nav{
   max-height: none;
   left: 0;
   margin: 0 auto;
+  position: fixed;
 }
