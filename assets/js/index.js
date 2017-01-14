@@ -8,6 +8,18 @@ $(document).ready(function(){
 	$('select').material_select();
 	$('.parallax').parallax();
 	$('.button-collapse').sideNav();
+
+	// Use this for a smoother scroll
+	// var easing = 'easeInQuad'; // https://jqueryui.com/easing
+	// $('html, body').animate( { scrollTop: $(page).offset().top }, speed, easing );
+
+	// Scroll to target jQuery function
+	$('.scrollTo').on('click', function() {
+		var target = $(this).attr('href'); // Go to target
+		var speed = 500; // Animaton duration (en ms)
+		$('html, body').animate( { scrollTop: $(target).offset().top-20 }, speed ); // Go
+		return false;
+	});
 });
 
 /*-----------------------------------------------------------------------------------*/
@@ -50,7 +62,7 @@ function loadSerializedData(formId, data)
 }
 
 
-$(".signup a#pre_signup_btn").on('click', function() {
+$("#signup a#pre_signup_btn").on('click', function() {
     var data = $('#pre_registration_form').serialize();
     loadSerializedData('registration_form', data);
 });

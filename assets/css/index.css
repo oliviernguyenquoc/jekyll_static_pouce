@@ -48,7 +48,7 @@ footer.page-footer {
 /* --- app.firstscreen.component.css --- */
 /* ------------------------- */
 
-.firstscreen .parallax-container {
+#firstscreen .parallax-container {
 	min-height: 380px;
 	line-height: 0;
 	height: 100vh;
@@ -57,25 +57,25 @@ footer.page-footer {
 	border: 1px solid #979797;
 }
 
-.firstscreen .parallax{
+#firstscreen .parallax{
   overflow: hidden;
 }
 	
-.firstscreen .parallax img{
+#firstscreen .parallax img{
 	width: 100%;
   height: inherit;
 }
 
-.firstscreen #title{
+#firstscreen #title{
 	font-size: 80px;
 }
 
 
-.firstscreen #index-banner{
+#firstscreen #index-banner{
   padding-top: 130px;
 }
 
-.firstscreen #FAB{
+#firstscreen #FAB{
   position: absolute;
   top: 88vh;
   z-index: 100;
@@ -126,18 +126,6 @@ footer.page-footer {
   content: "* ";
   color: red;
 }
-
-/*
-.firstscreen .header{
-  margin-top: 2em;
-}
-.firstscreen .fp-tableCell {
-  display: block !important;
-}
-.firstscreen .slimScrollDiv{
-  min-height: 100vh;
-}
-*/
 
 /* ------------------------- */
 /* --- app.menu.component.css --- */
@@ -263,38 +251,38 @@ nav{
 /* --- app.restscreen.component.css --- */
 /* ------------------------- */
 
-.block3parts{
+#block3parts{
   height: 100vh;
   width: 80%;
   margin-top: 2em;
   padding-top: 2.5em;
 }
 
-.schools {
+#schools {
   height: 100vh;
   width: 80%;
   margin-top: 2em;
   padding-top: 2.5em;
 }
 
-.whatis {
+#whatis {
   height: 100vh;
   width: 80%;
   margin-top: 1em;
   padding-top: 2.5em;
 }
 
-.whynot {
+#whynot {
   height: 100vh !important;
   width: 100%;
 }
 
-.schools a.twitter-timeline{
+#schools a.twitter-timeline{
   text-align: center;
 
 }
 
-.schools iframe.twitter-timeline{ 
+#schools iframe.twitter-timeline{ 
   width: 90% !important;
   height: 50vh !important;
 }
@@ -303,14 +291,14 @@ nav{
 /* --- app.review.component.css --- */
 /* ------------------------- */
 
-.review{
+#review{
   margin-top: 2em;
   padding-top: 2.5em;
 	font-family: Roboto-BoldItalic;
 	font-size: 18px;
 }
 
-.review .signature{
+#review .signature{
 	color: #BDBDBD;
 }
 
@@ -318,7 +306,7 @@ nav{
 /* --- app.signup.component.css --- */
 /* ------------------------- */
 
-.signup{
+#signup{
 	width: 80%;
 }
 
