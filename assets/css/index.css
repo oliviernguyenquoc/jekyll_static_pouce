@@ -256,6 +256,7 @@ nav{
 
 .menu .side-nav{
   padding: 0 40px;
+  z-index: 1000;
 }
 
 /* ------------------------- */
