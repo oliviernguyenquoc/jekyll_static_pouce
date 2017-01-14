@@ -4,6 +4,7 @@
 
 $(document).ready(function(){
 	$('#modal1').modal();
+	$('#modal_connexion').modal();
 	$('select').material_select();
 	$('.parallax').parallax();
 	$('.button-collapse').sideNav();

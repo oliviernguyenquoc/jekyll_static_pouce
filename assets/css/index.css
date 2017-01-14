@@ -320,3 +320,14 @@ nav{
 .signup{
 	width: 80%;
 }
+
+#login #modal_connexion {
+  -ms-transform: scale(0.7) !important; /* IE 9 */
+  -webkit-transform: scale(0.7) !important;
+  transform: scale(0.7) !important;
+  overflow-y: visible;
+  background-color: transparent;
+  max-height: none;
+  left: 0;
+  margin: 0 auto;
+}
