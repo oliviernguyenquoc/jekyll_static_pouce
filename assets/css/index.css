@@ -291,14 +291,14 @@ nav{
 /* --- app.review.component.css --- */
 /* ------------------------- */
 
-#review{
+.review{
   margin-top: 2em;
   padding-top: 2.5em;
 	font-family: Roboto-BoldItalic;
 	font-size: 18px;
 }
 
-#review .signature{
+.review .signature{
 	color: #BDBDBD;
 }
 

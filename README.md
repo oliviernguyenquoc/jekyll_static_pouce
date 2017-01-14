@@ -27,6 +27,9 @@ Advices: (source: https://www.aerobatic.com/blog/jekyll-assets-bootstrap)
 * Copy paste the project
 * Execute 'gem install jekyll-assets uglifier jekyll-admin'
 
+* Install Imagemagick http://imagemagick.org/script/index.php ('brew install ImageMagick' on mac if you have Homebrew)
+* Execute 'gem install mini_magic'
+
 # How to add a school in the school list
 
 * Add the .png or .jpg file in assets/img/ecoles folder
