@@ -8542,8 +8542,3 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
-
-#citation1, #citation2, #citation3{
-	box-sizing: 360x108;
-}
-

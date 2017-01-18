@@ -41,7 +41,7 @@ footer.page-footer {
 }
 
 .section {
-  width: 90%;
+  width: 80%;
 }
 
 /* ------------------------- */
@@ -201,7 +201,6 @@ nav{
 
 .menu nav ul{
 	display: inline-block;
-	margin-right: 7em;
 }
 
 .menu nav #nav-desktop a{
@@ -217,7 +216,7 @@ nav{
 
 /* Logo */
 .menu .brand-logo{
-	padding-left: 25px;
+	padding-left: 50px;
 	padding-top: 6px;
 }
 
@@ -226,7 +225,7 @@ nav{
 	position: fixed;
 	right: 0px;
 	top: 14px;
-	padding-right: 23px;
+	padding-right: 50px;
 }
 
 .menu .btn-connexion{
@@ -292,8 +291,9 @@ nav{
 /* --- app.review.component.css --- */
 /* ------------------------- */
 
-.review{
-  	margin-top: 1em;
+#review{
+  margin-top: 2em;
+  padding-top: 2.5em;
 	font-family: Roboto-BoldItalic;
 	font-size: 18px;
 }
