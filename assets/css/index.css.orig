@@ -41,7 +41,7 @@ footer.page-footer {
 }
 
 .section {
-  width: 80%;
+  width: 90%;
 }
 
 #clock_day{
@@ -298,7 +298,12 @@ nav{
 /* ------------------------- */
 
 .review{
-  margin-top: 2.5em;
+<<<<<<< HEAD
+  margin-top: 2em;
+  padding-top: 2.5em;
+=======
+  	margin-top: 1em;
+>>>>>>> ff69b822cd3dfcf860e567b43270069b807c7dba
 	font-family: Roboto-BoldItalic;
 	font-size: 18px;
 }
