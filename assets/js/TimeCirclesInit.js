@@ -24,12 +24,19 @@ $(".clock").TimeCircles({
 	}
 });
 
+/*-----------------------------------------------------------------------------------*/
+/*	Counter animation
+/*-----------------------------------------------------------------------------------*/
+
 var date1 = new Date();
-var datadate = $(".clock_day").attr( 'data-date' );
+var datadate = $("#clock_day").attr( 'data-date' );
 var date2 = Date.parse(datadate);
 var diff = new Date(date2 - date1);
 var days = Math.floor(diff / 1000 / 60 / 60 / 24);
 
-$(".clock_day").replaceWith(
-	'<span class="clock_day" style="font-size: 100px;">'+ days +'</span>'
-);
+// var numAnim = new CountUp("clock_day", 0, endVal, duration/2);
+// numAnim.start(function() {
+//     numAnim.update(endVal);
+// });
+var numAnim = new CountUp("clock_day", 0, days);
+numAnim.start();

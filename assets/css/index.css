@@ -44,6 +44,11 @@ footer.page-footer {
   width: 80%;
 }
 
+#clock_day{
+  font-weight: bold;
+  font-size: 100px;
+}
+
 /* ------------------------- */
 /* --- app.firstscreen.component.css --- */
 /* ------------------------- */
