@@ -37,6 +37,10 @@ var days = Math.floor(diff / 1000 / 60 / 60 / 24);
 // var numAnim = new CountUp("clock_day", 0, endVal, duration/2);
 // numAnim.start(function() {
 //     numAnim.update(endVal);
-// });
+// }); 
 var numAnim = new CountUp("clock_day", 0, days);
-numAnim.start();
+
+var options = [
+	{selector: '.clock_day', offset: 20, callback: "numAnim.start()"}
+];
+Materialize.scrollFire(options);
