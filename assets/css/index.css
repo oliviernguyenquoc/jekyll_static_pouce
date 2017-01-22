@@ -49,6 +49,12 @@ footer.page-footer {
   font-size: 100px;
 }
 
+#modal1 .modal-content {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40px;
+}
+
 /* ------------------------- */
 /* --- app.firstscreen.component.css --- */
 /* ------------------------- */
