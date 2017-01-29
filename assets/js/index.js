@@ -1,9 +1,27 @@
 /*-----------------------------------------------------------------------------------*/
+/*	Youtube video Pause/Play
+/*-----------------------------------------------------------------------------------*/
+
+function toggleVideo(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("video_youtube");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+}
+
+/*-----------------------------------------------------------------------------------*/
 /*	Initialize Modals, Select fields, Parallax effect, Side navs
 /*-----------------------------------------------------------------------------------*/
 
 $(document).ready(function(){
 	$('#modal1').modal();
+	$('#modal_youtube').modal({
+		opacity: .8,
+		ready: function() { toggleVideo('playVideo'); },
+		complete: function() { toggleVideo('hide'); }
+	});
 	$('#modal_connexion').modal();
 	$('select').material_select();
 	$('.parallax').parallax();
