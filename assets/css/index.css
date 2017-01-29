@@ -18,8 +18,15 @@ h4{
   overflow: hidden;
 }
 
-#youtube_player .box{
+#youtube_player .box-big{
   background: url(img/video_play.png) center center;
+}
+
+#youtube_player .box-small{
+  background: url(img/video_play2.png) center center;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
 }
 
 #youtube_player .overlay {  
@@ -287,21 +294,18 @@ nav{
 /* ------------------------- */
 
 #block3parts{
-  height: 100vh;
   width: 80%;
   margin-top: 2em;
   padding-top: 2.5em;
 }
 
 #schools {
-  height: 100vh;
   width: 80%;
   margin-top: 2em;
   padding-top: 2.5em;
 }
 
 #whatis {
-  height: 100vh;
   width: 80%;
   margin-top: 1em;
   padding-top: 2.5em;
