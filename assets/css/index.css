@@ -41,7 +41,7 @@ footer.page-footer {
 }
 
 .section {
-  width: 80%;
+  width: 90%;
 }
 
 #clock_day{
@@ -65,7 +65,7 @@ footer.page-footer {
 #firstscreen .parallax{
   overflow: hidden;
 }
-	
+
 #firstscreen .parallax img{
 	width: 100%;
   height: inherit;
@@ -288,7 +288,7 @@ nav{
 
 }
 
-#schools iframe.twitter-timeline{ 
+#schools iframe.twitter-timeline{
   width: 90% !important;
   height: 50vh !important;
 }
@@ -298,13 +298,22 @@ nav{
 /* ------------------------- */
 
 .review{
+  width: 100%;
   margin-top: 2.5em;
 	font-family: Roboto-BoldItalic;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 .review .signature{
 	color: #BDBDBD;
+}
+
+#c0,#a0,#e0{
+  margin-right: 2em;
+}
+
+#c2, #a2, #e2{
+  margin-left: 2em;
 }
 
 /* ------------------------- */
