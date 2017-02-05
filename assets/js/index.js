@@ -140,6 +140,55 @@ $(function() {
 });
 
 /*-----------------------------------------------------------------------------------*/
+/*	Populate select input (University input on registration form)
+/*-----------------------------------------------------------------------------------*/
+
+// TODO: Change for production
+// Dev
+base_url = "http://localhost:8888/web/app_dev.php";
+// Prod :
+// base_url = "";
+edition_id = "2";
+
+$(document).ready(function(){
+	$.ajax({
+		type: "GET",
+		url: base_url + '/api/v1/editions/' + edition_id + '/schools',
+		contentType: "application/json; charset=utf-8",
+		data: {},
+    	dataType: "json",
+		success: function(data) {
+
+			var select = $("#registration_form select#university"), options = '';
+			select.empty();
+
+			select.append('<option value="" disabled selected>Choisissez votre école ou université</option>');
+
+			for(var i=0; i<data.length; i++)
+			{
+				options += "<option value='"+data[i].id+"'>"+ data[i].name +"</option>";              
+			}
+
+			select.append(options);
+
+			// trigger event
+    		select.trigger('contentChanged');
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+		    console.log("Error :");
+		    console.log(xhr.statusText);
+		    console.log(thrownError);
+		    console.log(ajaxOptions);
+        }
+	});
+
+	$('select').on('contentChanged', function() {
+		// re-initialize (update)
+		$(this).material_select('update');
+	});
+});
+
+/*-----------------------------------------------------------------------------------*/
 /*	Validate regitration form
 /*-----------------------------------------------------------------------------------*/
 

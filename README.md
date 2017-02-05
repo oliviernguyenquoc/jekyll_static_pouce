@@ -6,9 +6,8 @@ This project was done with Jekyll.
 
 * Registration form :
 	* Send form with AJAX
-	* Fill university with AJAX calls
 * Replace few full paths to jekyll-assets paths
-* Optimize compression css / js + img + one file ...
+* Optimize compression css / js + one file ...
 
 Advices: (source: https://www.aerobatic.com/blog/jekyll-assets-bootstrap)
 
@@ -17,6 +16,8 @@ Advices: (source: https://www.aerobatic.com/blog/jekyll-assets-bootstrap)
 * Consolidated multiple css and js files into these two bundled downloads
 * Eliminated unnecessary Bootstrap CSS and JavaScript components reducing download sizes
 * Served off a global CDN (CloudFront)
+* TODO list with comment: "// TODO"
+	* Change path in JS to prod database server
 
 ## Install
 
