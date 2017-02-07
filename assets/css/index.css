@@ -304,6 +304,13 @@ nav{
 	font-size: 17px;
 }
 
+.name{
+  width: 100%;
+  margin-top: 2.5em;
+  font-family: Roboto-BoldItalic;
+  font-size: 17px;
+}
+
 .review .signature{
 	color: #BDBDBD;
 }
@@ -338,4 +345,15 @@ nav{
 
 .signature{
 	margin-top: 1em;
+}
+
+/* ------------------------- */
+/* --- Partenaires --- */
+/* ------------------------- */
+
+.logo_partenaire{
+  float: left;
+  margin-left: 10%;
+  width: 30%;
+  height: 20%:
 }
