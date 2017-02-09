@@ -80,7 +80,7 @@ $("a#pre_signup_inscription_btn").on('click', function() {
 function serializeRegistrationForm()
 {
 	var json_mock = new Object();
-	
+
 	json_mock.fos_user_registration_form = new Object();
 	json_mock.fos_user_registration_form.email = $('form#registration_form input#email').val();
 	json_mock.fos_user_registration_form.plainPassword = new Object();
@@ -111,7 +111,7 @@ $(function() {
 // 			dataType: 'json',
 // 			success: function(msg){
 // 				$("#thanks").html(msg)
-// 				$("#form-content").modal('hide'); 
+// 				$("#form-content").modal('hide');
 // 			},
 // 			error: function(){
 // 				alert("Impossible de vous enregistrer. Merci de revenir plus tard.");
@@ -187,4 +187,16 @@ $(document).ready(function(){
 			}
 		}
 	});
+});
+
+
+$("#whatis-accordion").click(function(){
+	for(var i=1;i<=3;i++){
+		if(document.getElementById("accordion"+i).getAttribute("class")=="active"){
+			document.getElementById("whatis-right"+i).style.display="block";
+		}
+		else{
+			document.getElementById("whatis-right"+i).style.display="none";
+		}
+	}
 });
