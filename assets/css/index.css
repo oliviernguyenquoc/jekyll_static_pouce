@@ -1,67 +1,28 @@
+/* --------------------- */
+/* --- General styles--- */
+/* --------------------- */
+
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: #fcfcfc;
+}
+
+h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 p {
   line-height: 1.7;
 }
 
-.bullet li{
+.bullet li {
   list-style-type: disc;
   margin-left:15px;
 }
 
-
-h4{
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-/* ------------------------- */
-/* --- Youtube video part --- */
-/* ------------------------- */
-
-#youtube_player .box-big{
-  background: url(img/video_play.png) center center;
-}
-
-#youtube_player .box-small{
-  background: url(img/video_play2.png) center center;
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-}
-
-#youtube_player .overlay {  
-  background:rgba(0,0,0,.2);
-  text-align:center;
-  padding:170px 0 170px 0;
-  opacity:1;
-}
-
-#youtube_player .play img{
-  width: 84px;
-  height: 84px;
-  border-radius: 84px;
-  background: rgba(0,0,0,0.7);
-}
-
-
-.video-container {
-  height: 70vh;
-}
-
-/* ------------------------- */
-/* --- app.component.css --- */
-/* ------------------------- */
-
 footer.page-footer {
   margin: 0;
-}
-
-#core-content {
-  min-height: 92vh;
 }
 
 #top {
@@ -69,8 +30,7 @@ footer.page-footer {
   position: absolute;
 }
 
-.no-margin-left
-{
+.no-margin-left {
   margin-left: 0px !important;
 }
 
@@ -78,107 +38,13 @@ footer.page-footer {
   width: 80%;
 }
 
-#clock_day{
-  font-weight: bold;
-  font-size: 100px;
-}
-
-#modal1 .modal-content {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 40px;
-}
-
-/* ------------------------- */
-/* --- app.firstscreen.component.css --- */
-/* ------------------------- */
-
-#firstscreen .parallax-container {
-	min-height: 380px;
-	line-height: 0;
-	height: 100vh;
-	color: #26a69a;
-	background: rgba(47,48,54,0.30);
-	border: 1px solid #979797;
-}
-
-#firstscreen .parallax{
-  overflow: hidden;
-}
-	
-#firstscreen .parallax img{
-	width: 100%;
-  height: inherit;
-}
-
-#firstscreen #title{
-	font-size: 80px;
-}
-
-
-#firstscreen #index-banner{
-  padding-top: 130px;
-}
-
-#firstscreen #FAB{
-  position: absolute;
-  top: 88vh;
-  z-index: 100;
-  left:0;
-  right:0;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-/* Pre-registration form */
-
-#pre_registration_form{
-  margin-top: 30px;
-}
-
-/* Registration form */
-
-#registration_form .input-field div.error{
-  position: relative;
-  top: -1rem;
-  left: 0rem;
-  font-size: 0.8rem;
-  color:#FF4081;
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  -o-transform: translateY(0%);
-  transform: translateY(0%);
-}
-
-/* label underline focus color */
-#registration_form .input-field input[type=text]:focus {
-  border-bottom: 1px solid #ff4081;
-  box-shadow: 0 1px 0 0 #ff4081;
-}
-/* valid color */
-#registration_form .input-field input[type=text].valid {
-  border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
-}
-/* invalid color */
-#registration_form .input-field input[type=text].invalid {
-  border-bottom: 1px solid #ff4081;
-  box-shadow: 0 1px 0 0 #ff4081;
-}
-
-/* Add red star before label of required inputs */
-.required:before {
-  content: "* ";
-  color: red;
-}
-
-/* ------------------------- */
-/* --- app.menu.component.css --- */
-/* ------------------------- */
+/* ------------ */
+/* --- Menu --- */
+/* ------------ */
 
 /* NavBar */
 
-nav{
+nav {
   box-shadow: none;
 }
 
@@ -245,14 +111,14 @@ nav{
 }
 
 .menu nav ul{
-	display: inline-block;
-	margin-right: 7em;
+  display: inline-block;
+  margin-right: 7em;
 }
 
 .menu nav #nav-desktop a{
-	padding: 0 20px;
-	text-transform: uppercase;
-	color: white;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: white;
 }
 
 /* Scroll btn */
@@ -262,30 +128,30 @@ nav{
 
 /* Logo */
 .menu .brand-logo{
-	padding-left: 25px;
-	padding-top: 6px;
+  padding-left: 25px;
+  padding-top: 6px;
 }
 
 /* SignUp and LogIn Buttons */
 .menu #header-nav-buttons {
-	position: fixed;
-	right: 0px;
-	top: 14px;
-	padding-right: 23px;
+  position: fixed;
+  right: 0px;
+  top: 14px;
+  padding-right: 23px;
 }
 
 .menu .btn-connexion{
-	border: 1px solid #FFFFFF;
-	border-radius: 2px;
-	text-transform: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  text-transform: none;
 }
 
 .menu .btn-signup{
-	color: black;
-	background: #FFFFFF;
-	border: 1px solid #FFFFFF;
-	border-radius: 2px;
-	text-transform: none;
+  color: black;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  text-transform: none;
 }
 
 .menu .side-nav{
@@ -293,9 +159,244 @@ nav{
   z-index: 1000;
 }
 
-/* ------------------------- */
-/* --- app.restscreen.component.css --- */
-/* ------------------------- */
+/* -------------- */
+/* --- Signup --- */
+/* -------------- */
+
+#signup{
+  width: 80%;
+}
+
+#login #modal_connexion {
+  -ms-transform: scale(0.7) !important; /* IE 9 */
+  -webkit-transform: scale(0.7) !important;
+  transform: scale(0.7) !important;
+  overflow-y: visible;
+  background-color: transparent;
+  max-height: none;
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+}
+
+/* ------------------- */
+/* --- Firstscreen --- */
+/* ------------------- */
+
+#firstscreen .parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: 100vh;
+  color: #26a69a;
+  background: rgba(47,48,54,0.30);
+}
+
+#firstscreen .parallax{
+  overflow: hidden;
+}
+  
+#firstscreen .parallax img{
+  width: 100%;
+  height: inherit;
+}
+
+#firstscreen #title{
+  font-size: 80px;
+}
+
+
+#firstscreen #index-banner{
+  padding-top: 130px;
+}
+
+#firstscreen #FAB{
+  position: absolute;
+  top: 88vh;
+  z-index: 100;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* -------------- */
+/* --- Review --- */
+/* -------------- */
+
+.review {
+  margin-top: 2em;
+  font-family: Roboto-BoldItalic;
+  font-size: 18px;
+}
+
+.review .signature {
+  color: #BDBDBD;
+  margin-top: 1em;
+}
+
+/* ------------------ */
+/* --- Count days --- */
+/* ------------------ */
+
+#clock_day {
+  font-weight: bold;
+  font-size: 100px;
+}
+
+/* ---------------------------- */
+/* --- Subscription (Modal) --- */
+/* ---------------------------- */
+
+/* Registration modal */
+
+#modal1 .modal-content {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40px;
+}
+
+/* Pre-registration form */
+
+#pre_registration_form{
+  margin-top: 30px;
+}
+
+/* Registration form */
+
+#registration_form .input-field div.error{
+  position: relative;
+  top: -1rem;
+  left: 0rem;
+  font-size: 0.8rem;
+  color:#FF4081;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+/* label underline focus color */
+#registration_form .input-field input[type=text]:focus {
+  border-bottom: 1px solid #ff4081;
+  box-shadow: 0 1px 0 0 #ff4081;
+}
+/* valid color */
+#registration_form .input-field input[type=text].valid {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+/* invalid color */
+#registration_form .input-field input[type=text].invalid {
+  border-bottom: 1px solid #ff4081;
+  box-shadow: 0 1px 0 0 #ff4081;
+}
+
+/* Add red star before label of required inputs */
+.required:before {
+  content: "* ";
+  color: red;
+}
+
+/* -------------------------- */
+/* --- Youtube video part --- */
+/* -------------------------- */
+
+#youtube_player .box-big{
+  background: url(img/video_play.png) center center;
+}
+
+#youtube_player .box-small{
+  background: url(img/video_play2.png) center center;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+
+#youtube_player .overlay {  
+  background:rgba(0,0,0,.2);
+  text-align:center;
+  padding:170px 0 170px 0;
+  opacity:1;
+}
+
+#youtube_player .play img{
+  width: 84px;
+  height: 84px;
+  border-radius: 84px;
+  background: rgba(0,0,0,0.7);
+}
+
+
+.video-container {
+  height: 70vh;
+}
+
+/* --------------- */
+/* --- Numbers --- */
+/* --------------- */
+
+#numbers .digits {
+  font-size: 60px;
+  font-weight: 300;
+  color: #4b4e53;
+  line-height: 75px;
+}
+
+#numbers .title {
+  color: #7e8082;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+#numbers .subtitle {
+
+}
+
+#numbers .tabs .tab a {
+  overflow: visible;
+  padding-top: 10px;
+  border-right: 1px solid #e0e0e0;
+  height: 130px;
+}
+
+#numbers .tabs {
+  height: 130px;
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+#numbers .menu_tabs{
+  padding-top: 40px;
+  width:80%;
+}
+
+#numbers .content{
+  padding-top: 50px;
+}
+
+#numbers{
+  /*background-image: url(img/evenement_photo.jpg);*/
+}
+
+#numbers .parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: 800px;
+  background: rgba(47,48,54,0.30);
+}
+
+#numbers .parallax{
+  overflow: hidden;
+}
+  
+#numbers .parallax img{
+  width: 100%;
+  height: inherit;
+}
+
+/* ------------------ */
+/* --- Restscreen --- */
+/* ------------------ */
 
 #block3parts{
   width: 80%;
@@ -328,42 +429,4 @@ nav{
 #schools iframe.twitter-timeline{ 
   width: 90% !important;
   height: 50vh !important;
-}
-
-/* ------------------------- */
-/* --- app.review.component.css --- */
-/* ------------------------- */
-
-.review{
-  margin-top: 2em;
-	font-family: Roboto-BoldItalic;
-	font-size: 18px;
-}
-
-.review .signature{
-	color: #BDBDBD;
-}
-
-/* ------------------------- */
-/* --- app.signup.component.css --- */
-/* ------------------------- */
-
-#signup{
-	width: 80%;
-}
-
-#login #modal_connexion {
-  -ms-transform: scale(0.7) !important; /* IE 9 */
-  -webkit-transform: scale(0.7) !important;
-  transform: scale(0.7) !important;
-  overflow-y: visible;
-  background-color: transparent;
-  max-height: none;
-  left: 0;
-  margin: 0 auto;
-  position: fixed;
-}
-
-.signature{
-	margin-top: 1em;
 }
