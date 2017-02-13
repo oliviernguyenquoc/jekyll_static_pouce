@@ -363,16 +363,14 @@ text-transform:inherit;
 }
 
 .review .signature{
-	color: #BDBDBD;
+  margin-top: 1em;
 }
 
-#c0,#a0,#e0{
-  margin-right: 2em;
+.name, .from{
+  	color: #BDBDBD
 }
 
-#c2, #a2, #e2{
-  margin-left: 2em;
-}
+
 
 /* ------------------------- */
 /* --- app.signup.component.css --- */
@@ -394,17 +392,27 @@ text-transform:inherit;
   position: fixed;
 }
 
-.signature{
-	margin-top: 1em;
-}
 
 /* ------------------------- */
 /* --- Partenaires --- */
 /* ------------------------- */
 
+.partenaire{
+  width: 100%;
+}
+
+.descri_partenaire{
+  padding-top: 4%;
+  text-align: left; /*Contrer l'héritage de "center" */
+
+}
+
+.partenaire.center{
+  margin-top: 3em;
+}
+
 .logo_partenaire{
   float: left;
-  margin-left: 10%;
-  width: 30%;
+  width: 20%;
   height: 20%:
 }
