@@ -416,3 +416,13 @@ text-transform:inherit;
   width: 20%;
   height: 20%:
 }
+
+/* ------------------------- */
+/* --- Liens --- */
+/* ------------------------- */
+
+.logo_lien{
+  float: left;
+  width: 10%;
+  height: 10%:
+}
