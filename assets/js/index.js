@@ -270,3 +270,15 @@ $("#whatis-accordion").click(function(){
 		}
 	}
 });
+
+/*-----------------------------------------------------------------------------------*/
+/*	Contact form
+/*-----------------------------------------------------------------------------------*/
+ 
+$(function (){
+	$("#mailForm button#submitMail").on('click', function (event) {
+		var subject = $("#mailForm #subject").val() + ' - From: ' + $("#mailForm #name").val() + ' (' + $("#mailForm #email").val() + ')';
+		mailto_link = 'mailto:staff@poucedor.fr?subject=' + encodeURIComponent(subject)  + '&body=' + encodeURIComponent($("#mailForm #message").val());
+		win = window.open(mailto_link, 'emailWindow');
+	});
+});
