@@ -255,3 +255,18 @@ $(document).ready(function(){
 		}
 	});
 });
+
+/*-----------------------------------------------------------------------------------*/
+/*	WhatIsJs Made by remy
+/*-----------------------------------------------------------------------------------*/
+
+$("#whatis-accordion").click(function(){
+	for(var i=1;i<=3;i++){
+		if(document.getElementById("accordion"+i).getAttribute("class")=="active"){
+			document.getElementById("whatis-right"+i).style.display="block";
+		}
+		else{
+			document.getElementById("whatis-right"+i).style.display="none";
+		}
+	}
+});
