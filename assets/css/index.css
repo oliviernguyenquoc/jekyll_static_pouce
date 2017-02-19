@@ -370,19 +370,16 @@ nav {
   width:80%;
 }
 
-#numbers .content{
-  padding-top: 50px;
-}
-
 #numbers{
   /*background-image: url(img/evenement_photo.jpg);*/
 }
 
 #numbers .parallax-container {
-  min-height: 380px;
+  min-height: 800px;
   line-height: 0;
   height: 800px;
   background: rgba(47,48,54,0.30);
+  padding-top: 30px;
 }
 
 #numbers .parallax{
@@ -392,6 +389,20 @@ nav {
 #numbers .parallax img{
   width: 100%;
   height: inherit;
+}
+
+#numbers #ecoles {
+  background-color: #fcfcfc;
+  height: 460px;
+}
+
+#numbers #school_image{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#numbers #ecoles img{
+  max-height: 95px;
 }
 
 /* ------------------ */

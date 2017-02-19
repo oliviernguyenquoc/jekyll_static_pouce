@@ -6,35 +6,69 @@
 	<div class="row menu_tabs">
 		<ul class="tabs">
 			<li class="tab col s12 m3">
-				<a href="#test1">
+				<a class="active" href="#heures">
 					<div class="digits">48</div>
 					<div class="title">HEURES</div>
 				</a>
 			</li>
 			<li class="tab col s12 m3">
-				<a class="active" href="#test2">
+				<a href="#transport">
 					<div class="digits">1</div>
 					<div class="title">MOYEN DE TRANSPORT</div>
 				</a>
 			</li>
 			<li class="tab col s12 m3">
-				<a href="#test3">
+				<a href="#ecoles">
 					<div class="digits">30</div>
 					<div class="title">ECOLES</div>
 				</a>
 			</li>
 			<li class="tab col s12 m3">
-				<a href="#test4">
+				<a href="#km">
 					<div class="digits">300</div>
 					<div class="title">KM</div>
 				</a>
 			</li>
 		</ul>
 	</div>
-	<div class="row content">
-		<div id="test1" class="col s12">Test 1</div>
-		<div id="test2" class="col s12">Test 2</div>
-		<div id="test3" class="col s12">Test 3</div>
-		<div id="test4" class="col s12">Test 4</div>
+	<div class="row section content">
+		<div id="heures">
+			<div class="col s12 m6">
+			</div>
+	    	<div class="col s12 m6">
+				<p>
+		            Les règles du jeu sont simples.
+		        </p>
+		        <p>
+		            Par binôme, vous devez aller le plus loin possible en stop sur un week-end.
+		        </p>
+		        <p>
+		            La distance parcourue est mesurée grâce à un GPS en choisissant l’itinéraire « au plus court » après avoir renseigné le lieu de départ et le lieu d’arrivée.
+		        </p>
+		    </div>
+		</div>
+		<div id="transport">
+			<div class="col s12 m6">
+			</div>
+	    	<div class="col s12 m6">
+		        <p>
+		            Le départ aura lieu le samedi 3 octobre à 9h (lieu à définir au sein de chaque école). Vous devrez rentrer avant le début des cours, donc avant le lundi à 8h. Si vous n’êtes pas là, vous aurez droit à 100 km de pénalité par heure de retard.
+		        </p>
+		        <p>
+		        	Tout trajet en transport autre que du stop est éliminatoire (les transports en commun dans les villes sont acceptés).
+		        </p>
+		    </div>
+			<p>
+				ATTENTION : Un retour en train ou en covoiturage est un abandon. 
+			</p>
+		</div>
+		<div id="ecoles">
+			<div id="school_image" class="section center">
+				{% include list_schools.html %}
+			</div>
+		</div>
+		<div id="km" class="row">
+			Le top 3 sous forme de podium
+		</div>
 	</div>
 </div>
