@@ -6,19 +6,19 @@ function aleatoire(N) {
 
 //On écrit toutes les citations, établissements et auteurs. Pas opti comme méthode.
 
-var listeCitations=['Un moment privilégié pour s\'ouvrir aux opportunités, aux surprises et aux autres. Pour laisser les choses nous tomber dessus.',
-					'J\'ai trouvé ça très sympathique même si on s\'est pris la pluie violemment pendant 1h30.',
-					'C\'était la folie mais on a eut froid à 5h du mat à Amsterdam.',
-					'Aventure exceptionnelle, avec plein de merveilleuses rencontres et des souvenirs gravés à jamais !',
-					'Superbe aventure, avec la présence rassurante d\'un staff organisé !',
-					'Comme l\'année dernière, un régal d\'émotions!',
-					'Expérience unique, parfois fatiguante et exaspérante mais passionnante ! On a adoré.',
-					'Une expérience complétement inédite pour moi de vagabonder comme ça sur les routes, au gré des voitures.',
-					'C\'était génial ! Juste un peu déçus d\'avoir été bloqués dans Lyon par la manif des motards..',
-					'A refaire l\'année prochaine, (en évitant de s\'engouffrer dans des routes paumées au milieu de la nuit ceci-dit).',
-				    'Et à partir de maintenant, je jure de prendre tout autostoppeur que je croise sur le bord de la route !',
-				    'Fou !!!!! Super experience, à refaire, et maintenant c\'est sur que je prendrai des gens en stop :)',
-				    'C\'était trop cool, sauf la petite nuit aux étoiles à Amsterdam.'];
+var listeCitations=['"Un moment privilégié pour s\'ouvrir aux opportunités, aux surprises et aux autres. Pour laisser les choses nous tomber dessus."',
+					'"J\'ai trouvé ça très sympathique même si on s\'est pris la pluie violemment pendant 1h30."',
+					'"C\'était la folie mais on a eut froid à 5h du mat à Amsterdam."',
+					'"Aventure exceptionnelle, avec plein de merveilleuses rencontres et des souvenirs gravés à jamais !"',
+					'"Superbe aventure, avec la présence rassurante d\'un staff organisé !"',
+					'"Comme l\'année dernière, un régal d\'émotions!"',
+					'"Expérience unique, parfois fatiguante et exaspérante mais passionnante ! On a adoré."',
+					'"Une expérience complétement inédite pour moi de vagabonder comme ça sur les routes, au gré des voitures."',
+					'"C\'était génial ! Juste un peu déçus d\'avoir été bloqués dans Lyon par la manif des motards.."',
+					'"A refaire l\'année prochaine, (en évitant de s\'engouffrer dans des routes paumées au milieu de la nuit ceci-dit)."',
+				    '"Et à partir de maintenant, je jure de prendre tout autostoppeur que je croise sur le bord de la route !"',
+				    '"Fou !!!!! Super experience, à refaire, et maintenant c\'est sur que je prendrai des gens en stop :)"',
+				    '"C\'était trop cool, sauf la petite nuit aux étoiles à Amsterdam."'];
 
 var listeAuteurs=['Stop\'épique',
 					'Les Divas',
