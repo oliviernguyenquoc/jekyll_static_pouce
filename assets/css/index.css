@@ -434,3 +434,20 @@ padding-right : 0px;
   width: 10%;
   height: 10%:
 }
+
+/* ------------------------- */
+/* --- Footer --- */
+/* ------------------------- */
+
+.droits{
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.1;
+  padding: 15px;
+  width: 80%;
+}
+
+#licence{
+  margin-right:10%;
+  color:rgba(255, 255, 255, 0.8) !important;
+}
