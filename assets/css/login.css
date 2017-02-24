@@ -47,7 +47,7 @@
   font-size: 34px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #ED2553;
+  color: #ffa000;
   position: relative;
 }
 #login .title:before {
@@ -57,7 +57,7 @@
   position: absolute;
   top: 0;
   left: -50px;
-  background: #ED2553;
+  background: #ffa000;
 }
 #login .input,
 #login .input label,
@@ -129,7 +129,7 @@
   z-index: 3;
 }
 #login .input .spin {
-  background: #ED2553;
+  background: #ffa000;
   z-index: 4;
   width: 0;
 }
@@ -170,7 +170,7 @@
 }
 #login .button button {
   background-color: #fff;
-  color: #ED2553;
+  color: #ffa000;
   border: none;
 }
 #login .button.login button.active {
@@ -201,8 +201,8 @@
   -ms-transform: scale(0) rotate(-45deg);
 }
 #login .button.login button:hover {
-  color: #ED2553;
-  border-color: #ED2553;
+  color: #ffa000;
+  border-color: #ffa000;
 }
 #login .button {
   margin: 40px 0;
@@ -225,7 +225,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #ED2553;
+  background: #ffa000;
   border-radius: 50%;
 }
 #login .overbox {
@@ -267,7 +267,7 @@
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background: #ED2553;
+  background: #ffa000;
   position: absolute;
   top: 40px;
   right: -70px;
@@ -351,5 +351,5 @@
   outline: none;
 }
 #login button#pre_signup_inscription_btn span{
-   color: #ED2553;
+   color: #ffa000;
 }

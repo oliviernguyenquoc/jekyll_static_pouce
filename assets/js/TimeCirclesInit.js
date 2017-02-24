@@ -4,21 +4,21 @@ $(".clock").TimeCircles({
 	fg_width: 0.05,
 	use_background: false,
 	time: {
-		Days: { 
-			color: "#009688",
+		Days: {
+			color: "#ffab00",
 			text: "Jour",
 			show: false
 		},
-    	Hours: { 
-    		color: "#009688",
+    	Hours: {
+    		color: "#ffab00",
     		text: "Heures"
 		},
-    	Minutes: { 
-    		color: "#009688",
+    	Minutes: {
+    		color: "#ffab00",
     		text: "Minutes"
 		},
-    	Seconds: { 
-    		color: "#009688",
+    	Seconds: {
+    		color: "#ffab00",
     		text: "Secondes"
 		}
 	}
