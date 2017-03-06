@@ -71,10 +71,23 @@ footer.page-footer {
   height: inherit;
 }
 
-#firstscreen #title{
-	font-size: 80px;
+@media screen and (max-width: 500px) /* Titre sur petit écran */
+{
+  #firstscreen #title{
+	   font-size: 42px;
+   }
+
+   #essentielaccueil{
+     font-size: 1.3rem;
+   }
 }
 
+@media screen and (min-width: 500px){ /*Titre sur grand écran */
+
+  #firstscreen #title{
+	   font-size: 80px;
+   }
+}
 
 #firstscreen #index-banner{
   padding-top: 130px;
