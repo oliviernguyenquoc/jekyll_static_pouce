@@ -150,7 +150,7 @@ nav{
 
 #navbar.default {
   box-shadow: none;
-  padding-top: 10px;    /*barre au dessus du menu*/
+  /*padding-top: 10px;    barre au dessus du menu*/
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -159,7 +159,7 @@ nav{
 }
 
 #navbar.default #header-nav-buttons {
-  top: 34px;
+  top: 14px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -204,79 +204,49 @@ nav{
   transition: all 0.4s;
 }
 
-.menu nav ul{
-	display: inline-block;
-	margin-right: 7em;
-}
-
 .menu nav #nav-desktop a{
-	padding: 0 20px;
+	padding: 0;
 	text-transform: uppercase;
 	color: white;
 }
 
-/* menu déroulant */
-
-.menu nav #nav-desktop, #nav-desktop ul{
+.menu nav #nav-desktop {
 padding:0;
 margin:0;
 list-style:none;
 text-align:center;
-}
-.menu nav #nav-desktop li{
+width : 100%;
 display:inline-block;
-position:relative;
 }
-
-.menu nav #nav-desktop ul li:last-child{
-border-radius:0 0 8px 8px;
-}
-.menu nav #nav-desktop ul{
-position:absolute;
-z-index: 1000;
-max-height:0;
-left: 0;
-right: 0;
-overflow:hidden;
--moz-transition: .8s all .3s;
--webkit-transition: .8s all .3s;
-transition: .8s all .3s;
-}
-.menu nav #nav-desktop li:hover ul{
-max-height:15em;
-}
-
-/* les a href */
-.menu nav #nav-desktop a{
-text-decoration:none;
-display:block;
-padding-left: 0px;
-padding-right : 0px;
-}
-
-.menu nav #nav-desktop li ul{
-  width:100%;
-}
-.menu nav #nav-desktop li ul li{
-  width:100%;
-  height: 8vh;
-}
-.menu nav #nav-desktop li ul li a{
-  text-transform:inherit;
-  font-size: 2vh;
-  padding :0;
-  margin: 0;
-}
-
 .menu nav #nav-desktop li{
-  width:20%;
+position:relative;
+text-align:center;
 }
 
-.menu nav #nav-desktop{
-  width : 80%;
+.menu #logo-container {
+  width : 17%;
 }
 
+.menu nav {
+  padding-left: 17%;
+}
+#navcolor {
+  padding-right: 300px;}
 
+#navcolor .nav-wrapper {
+  width : 100%;}
+
+#logo-container {
+  height : 100%;
+  margin : auto;
+}
+
+.menuligros {
+  width : 21%;
+}
+.menulipetit {
+  width : 16%;
+}
 
 /* Scroll btn */
 .menu .button-collapse {
@@ -286,7 +256,7 @@ padding-right : 0px;
 /* Logo */
 .menu .brand-logo{
 	padding-left: 25px;
-	padding-top: 6px;
+	/*padding-top: 6px; */
 }
 
 /* SignUp and LogIn Buttons */
