@@ -189,6 +189,9 @@ $(document).ready(function(){
 	});
 });
 
+/*-----------------------------------------------------------------------------------*/
+/*	whatis accordion
+/*-----------------------------------------------------------------------------------*/
 
 $("#whatis-accordion").click(function(){
 	for(var i=1;i<=3;i++){
@@ -199,4 +202,44 @@ $("#whatis-accordion").click(function(){
 			document.getElementById("whatis-right"+i).style.display="none";
 		}
 	}
+});
+
+/*-----------------------------------------------------------------------------------*/
+/*	whatis calendar
+/*-----------------------------------------------------------------------------------*/
+$(document).ready(function(){
+	var now = new Date();
+	var year = now.getFullYear();
+	var month = now.getMonth() + 1;
+	var date = now.getDate();
+
+
+	var data = [{
+	    date: year + '-' + month + '-' + (date - 1),
+	    value: 'hello'
+	}, {
+	    date: year + '-' + month + '-' + date,
+	    value: 'aujourd\'hui'
+	}, {
+	    date: new Date(year, month - 1, date + 1),
+	    value: '吃饭睡觉打豆豆'
+	}];
+
+	var $ca = $('.calendar-container').calendar({
+	    //view: 'month',
+	    width: 320,
+	    height: 320,
+			// startWeek: 0,
+	    // selectedRang: [new Date(), null],
+	    data: data,
+	    date: now,
+	    onSelected: function (view, date, data) {
+	        console.log('view:' + view)
+	        console.log('date:' + date)
+	        console.log('data:' + data);
+	    },
+	    viewChange: function (view, y, m) {
+	        console.log(view, y, m)
+	    }
+	});
 });

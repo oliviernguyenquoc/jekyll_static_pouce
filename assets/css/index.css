@@ -18,6 +18,8 @@ h4{
   overflow: hidden;
 }
 
+
+
 /* ------------------------- */
 /* --- app.component.css --- */
 /* ------------------------- */
@@ -321,7 +323,6 @@ padding-right : 0px;
 /* ------------------------- */
 
 #block3parts{
-  height: 100vh;
   width: 80%;
   margin-top: 2em;
   padding-top: 2.5em;
@@ -335,8 +336,6 @@ padding-right : 0px;
 }
 
 #whatis {
-  height: 100vh;
-  width: 80%;
   margin-top: 1em;
   padding-top: 2.5em;
 }
@@ -450,4 +449,41 @@ padding-right : 0px;
 #licence{
   margin-right:10%;
   color:rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ------------------------- */
+/* --- app.whatis.component.css --- */
+/* ------------------------- */
+
+#whatis .parallax-container {
+  height: 700px;
+  background: rgba(47,48,54,0.30);
+  padding-top: 30px;
+}
+
+#whatis .parallax{
+  overflow: hidden;
+}
+
+#whatis .parallax img{
+  width: 100%;
+  height: inherit;
+}
+
+#whatis .collapsible-header{
+  color: #4b4e53;
+}
+
+#whatis .collapsible-body{
+  color: #4b4e53;
+  background-color: #fff
+}
+
+#whatis p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#whatis .calendar-container li{
+  font: 500 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
