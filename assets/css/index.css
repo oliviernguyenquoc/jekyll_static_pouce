@@ -415,12 +415,13 @@ text-align:center;
 .logo_lien{
   float: left;
   width: 10%;
-  height: 10%:
+  height: 10%;
 }
 
 /* ------------------------- */
 /* --- Footer --- */
 /* ------------------------- */
+
 
 .droits{
   font-family: 'Oswald', sans-serif;
@@ -433,4 +434,9 @@ text-align:center;
 #licence{
   margin-right:10%;
   color:rgba(255, 255, 255, 0.8) !important;
+}
+
+h5 footer{
+  color: #FFFFFF !important;
+  font-family: 'Oswald', sans-serif;
 }
