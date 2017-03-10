@@ -1,5 +1,5 @@
 .calendar {
-    width: 280px;
+    width: 350px;
     height: 330px;
 }
 
@@ -162,13 +162,13 @@
 
 .calendar .month-items {
   list-style: none;
-  margin: 0 0 0 0;
+  margin: 0 10px 0 10px;
   padding: 0;
 }
 
 .calendar .week{
   list-style: none;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0px 20px;
   padding: 0;
 }
 
@@ -181,7 +181,7 @@
     width: 70px;
     height: 70px;
     line-height: 70px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .calendar .days li[data-calendar-day]:hover,
@@ -216,7 +216,7 @@
 
 .calendar .calendar-views .marked {
   border-color: #ffd54f;
-  border-width: thin;
+  border-width:2px;
   border-style: solid;
 }
 
@@ -232,7 +232,7 @@
     left: 50%;
     z-index: 2;
     padding: 5px 10px;
-    line-height: 22px;
+    line-height: 12px;
     color: #fff;
     background: #000;
     border-radius: 3px;
