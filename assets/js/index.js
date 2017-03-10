@@ -213,17 +213,6 @@ $(document).ready(function(){
 	var month = now.getMonth() + 1;
 	var date = now.getDate();
 
-	// Vendredi 30 septembre 23h59</b> : Fermeture des inscriptions des participants. C’est le moment où il vaut mieux éviter de faire une soirée pré-départ.<br />
-	// <b>Samedi 1er octobre 7h20</b> : Rendez-vous au point de rencontre pour la distribution des gilets jaunes, la remise des décharges et les derniers points de sécurité. Grosse grosse grosse ambiance !<br />
-	// <b>Samedi 1er octobre 8h00</b> : C’est parti pour la première vague de Pouceux !<br />
-	// <b>Samedi 1er octobre 18h27</b> : D’après Roger, Prague c’est très joli de nuit, qu’est-ce que tu penses de ton aire d’autoroute pourrie ?<br />
-	// <b>Dimanche 2 octobre 13h09</b> : Vous croisez un binôme de Marseille. Sauf qu’eux ils sont à 764 km de chez eux.<br />
-	// <b>Lundi 3 septembre 8h00</b> : La plupart des Pouceux sont rentrés et vont mécaniquement en amphi. Y’en a deux qui sont encore bloqués à Strasbourg, ce sont des héros.<br />
-	// <b>Samedi 8 octobre 8h00</b> : La deuxième vague de Pouceux est en route !!<br />
-	// <b>Lundi 10 octobre 8h00</b> : Fin du Pouce d’Or 2016, tout le monde raconte ses anecdotes !! Vous avez jusqu’au 15 septembre pour valider vos parcours sur le site internet, y déclarer vos retards et y raconter votre aventure !</p>
-	//
-	// <p><b>Jeudi 9 février 2017</b> : Ouaaaaais y’a le classement en ligne !!!
-
 	var data = [{
 	    date: '2017-09-21',
 	    value: 'Ouverture des inscriptions des participants.'
@@ -257,7 +246,8 @@ $(document).ready(function(){
 			// startWeek: 0,
 	    // selectedRang: [new Date(), null],
 	    data: data,
-	    date: now,
+			label: '<b>{d}</b>\n{v}',
+			date: now,
 	    onSelected: function (view, date, data) {
 	        console.log('view:' + view)
 	        console.log('date:' + date)

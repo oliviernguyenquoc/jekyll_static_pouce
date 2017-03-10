@@ -186,32 +186,38 @@
 
 .calendar .days li[data-calendar-day]:hover,
 .calendar .view-month li[data-calendar-month]:hover {
-    background: #eee;
+    background: #fff8e1;
 }
 
 .calendar .calendar-views .now {
     color: #fff;
-    background: #66be8c!important;
+    background: #ffa000!important;
 }
 
 .calendar .calendar-views .selected {
-    color: #66be8c;
-    background: #CDE9D9!important;
+    color: #ffa000;
+    background: #ffecb3!important;
 }
 
-.calendar .calendar-views .dot {
+/*.calendar .calendar-views .dot {
     position: absolute;
     left: 50%;
     bottom: 4px;
-    margin-left: -2px;
-    width: 4px;
-    height: 4px;
-    background: #66be8c;
+    margin-left: -3px;
+    width: 6px;
+    height: 6px;
+    background: #ffa000;
     border-radius: 50%;
 }
 
 .calendar-views .now .dot {
     background: #fff;
+}*/
+
+.calendar .calendar-views .marked {
+  border-color: #ffd54f;
+  border-width: thin;
+  border-style: solid;
 }
 
 .calendar .date-items {
