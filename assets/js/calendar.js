@@ -422,7 +422,7 @@ monthArray: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oc
             var monthArray = this.options.monthArray,
                 month = [],
                 w = this.width / 4,
-                h = this.height / 3,
+                h = this.height / 4,
                 i = 0;
 
             for (; i < 12; i++) {
