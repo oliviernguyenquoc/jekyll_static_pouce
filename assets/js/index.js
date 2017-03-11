@@ -189,6 +189,9 @@ $(document).ready(function(){
 	});
 });
 
+/*-----------------------------------------------------------------------------------*/
+/*	whatis accordion
+/*-----------------------------------------------------------------------------------*/
 
 $("#whatis-accordion").click(function(){
 	for(var i=1;i<=3;i++){
@@ -199,4 +202,59 @@ $("#whatis-accordion").click(function(){
 			document.getElementById("whatis-right"+i).style.display="none";
 		}
 	}
+});
+
+/*-----------------------------------------------------------------------------------*/
+/*	whatis calendar
+/*-----------------------------------------------------------------------------------*/
+$(document).ready(function(){
+	var now = new Date();
+	var year = now.getFullYear();
+	var month = now.getMonth() + 1;
+	var date = now.getDate();
+
+	var data = [{
+	    date: '2017-09-21',
+	    value: 'Ouverture des inscriptions des participants.'
+	},{
+	    date: '2017-09-30',
+	    value: '<b>23h59</b> : Fermeture des inscriptions des participants. C’est le moment où il vaut mieux éviter de faire une soirée pré-départ.'
+	},{
+	    date: '2017-10-01',
+	    value: '<b>7h20</b> : Rendez-vous au point de rencontre pour la distribution des gilets jaunes, la remise des décharges et les derniers points de sécurité. Grosse grosse grosse ambiance !<br /><b>8h00</b> : C’est parti pour la première vague de Pouceux !<br /><b>18h27</b> : D’après Roger, Prague c’est très joli de nuit, qu’est-ce que tu penses de ton aire d’autoroute pourrie ?'
+	},{
+	    date: '2017-10-02',
+	    value: '<b>13h09</b> : Vous croisez un binôme de Marseille. Sauf qu’eux ils sont à 764 km de chez eux.'
+	},{
+	    date: '2017-10-03',
+	    value: '<b>8h00</b> : La plupart des Pouceux sont rentrés et vont mécaniquement en amphi. Y’en a deux qui sont encore bloqués à Strasbourg, ce sont des héros.'
+	},{
+	    date: '2017-10-10',
+	    value: '<b>8h00</b> : Fin du Pouce d’Or 2016, tout le monde raconte ses anecdotes !! Vous avez jusqu’au 15 septembre pour valider vos parcours sur le site internet, y déclarer vos retards et y raconter votre aventure !'
+	},{
+	    date: '2018-02-09',
+	    value: 'Ouaaaaais y’a le classement en ligne !!!'
+	},{
+	    date: year + '-' + month + '-' + date,
+	    value: 'aujourd\'hui'
+	}];
+
+	var $ca = $('.calendar-container').calendar({
+	    view: 'month',
+	    width: 320,
+	    height: 320,
+			// startWeek: 0,
+	    // selectedRang: [new Date(), null],
+	    data: data,
+			label: '<b>{d}</b>\n{v}',
+			date: now,
+	    onSelected: function (view, date, data) {
+	        console.log('view:' + view)
+	        console.log('date:' + date)
+	        console.log('data:' + data);
+	    },
+	    viewChange: function (view, y, m) {
+	        console.log(view, y, m)
+	    }
+	});
 });
