@@ -320,7 +320,7 @@ monthArray: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oc
                 idt = new Date(y, m - 1, d),
                 data = {
                     w: this.width / 8,
-                    h: this.height / 6.5,
+                    h: this.height / 7 - 5,
                     value: d
                 },
                 markData,
@@ -424,8 +424,8 @@ monthArray: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oc
         getMonthHtml: function () {
             var monthArray = this.options.monthArray,
                 month = [],
-                w = this.width / 4,
-                h = this.height / 4,
+                w = this.width / 4 - 5,
+                h = this.height / 4 - 5,
                 i = 0;
 
             for (; i < 12; i++) {

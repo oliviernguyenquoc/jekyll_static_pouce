@@ -213,6 +213,17 @@ $(document).ready(function(){
 	var month = now.getMonth() + 1;
 	var date = now.getDate();
 
+	var monthNames = [
+    "Janvier", "Fevrier", "Mars",
+    "Avril", "Mai", "Juin", "Juillet",
+    "Aout", "Septembre", "Octobre",
+    "Novembre", "Decembre"
+  ];
+	var dayNames = [
+		"Dimanche", "Lundi", "Mardi", "Mercredi",
+		"Jeudi", "Vendredi", "Samedi"
+	];
+
 	var data = [{
 	    date: '2017-09-21',
 	    value: 'Ouverture des inscriptions des participants.'
@@ -242,19 +253,24 @@ $(document).ready(function(){
 	var $ca = $('.calendar-container').calendar({
 	    view: 'month',
 	    width: 320,
-	    height: 320,
-			// startWeek: 0,
-	    // selectedRang: [new Date(), null],
+	    height: 340,
+			startWeek: 1,
+    	weekArray: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sat'],
+    	monthArray: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aout', 'Sep', 'Oct', 'Nov', 'Dec'],
+	    //selectedRang: [new Date(), null],
 	    data: data,
-			label: '<b>{d}</b>\n{v}',
+			label: false,
 			date: now,
 	    onSelected: function (view, date, data) {
-	        console.log('view:' + view)
-	        console.log('date:' + date)
-	        console.log('data:' + data);
+	        // console.log('view:' + view)
+	        // console.log('date:' + date)
+	        // console.log('data:' + data);
+					if(data){
+						document.getElementById('accordion2').children[1].innerHTML='<b>'+dayNames[date.getDay()]+' '+date.getDate()+' '+monthNames[date.getMonth()]+' '+date.getFullYear()+'</b><br/><br/>'+data;
+					}
 	    },
 	    viewChange: function (view, y, m) {
-	        console.log(view, y, m)
+	        // console.log(view, y, m)
 	    }
 	});
 });
