@@ -220,8 +220,8 @@ $(document).ready(function(){
     "Novembre", "Decembre"
   ];
 	var dayNames = [
-		"Lundi", "Mardi", "Mercredi",
-		"Jeudi", "Vendredi", "Samedi", "Dimanche"
+		"Dimanche", "Lundi", "Mardi", "Mercredi",
+		"Jeudi", "Vendredi", "Samedi"
 	];
 
 	var data = [{
@@ -255,6 +255,8 @@ $(document).ready(function(){
 	    width: 320,
 	    height: 340,
 			startWeek: 1,
+    	weekArray: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sat'],
+    	monthArray: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aout', 'Sep', 'Oct', 'Nov', 'Dec'],
 	    //selectedRang: [new Date(), null],
 	    data: data,
 			label: false,
@@ -264,7 +266,7 @@ $(document).ready(function(){
 	        // console.log('date:' + date)
 	        // console.log('data:' + data);
 					if(data){
-						document.getElementById('accordion2').children[1].innerHTML='<b>'+dayNames[date.getDay()-1]+' '+date.getDate()+' '+monthNames[date.getMonth()]+' '+date.getFullYear()+'</b><br/><br/>'+data;
+						document.getElementById('accordion2').children[1].innerHTML='<b>'+dayNames[date.getDay()]+' '+date.getDate()+' '+monthNames[date.getMonth()]+' '+date.getFullYear()+'</b><br/><br/>'+data;
 					}
 	    },
 	    viewChange: function (view, y, m) {
