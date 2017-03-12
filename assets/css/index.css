@@ -119,6 +119,13 @@ footer.page-footer {
   margin-right:auto;
 }
 
+/* ------------------------- */
+/* --- app.firstimage.component.css --- */
+/* -------Pour les autres pages---- */
+
+.firstimage {
+}
+
 /* Pre-registration form */
 
 #pre_registration_form{
@@ -446,6 +453,7 @@ text-align:center;
   padding: 15px;
   width: 90%;
   margin-bottom: 5px;
+  max-width: initial !important;
 }
 
 #licence{
