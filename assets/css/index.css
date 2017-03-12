@@ -123,7 +123,18 @@ footer.page-footer {
 /* --- app.firstimage.component.css --- */
 /* -------Pour les autres pages---- */
 
-.firstimage {
+@media screen and (min-width: 1350px){
+
+  .firstimage {
+    height: 75vh;
+}
+}
+
+@media screen and (max-width: 700px){
+
+  .firstimage {
+    height: 85vh;
+}
 }
 
 /* Pre-registration form */
