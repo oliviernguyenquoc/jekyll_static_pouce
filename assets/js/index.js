@@ -251,7 +251,6 @@ $(document).ready(function(){
 	}];
 
 	var $ca = $('.calendar-container').calendar({
-	    view: 'month',
 	    width: 320,
 	    height: 340,
 			startWeek: 1,
@@ -260,7 +259,7 @@ $(document).ready(function(){
 	    //selectedRang: [new Date(), null],
 	    data: data,
 			label: false,
-			date: now,
+			date : new Date(2017,8,21),
 	    onSelected: function (view, date, data) {
 	        // console.log('view:' + view)
 	        // console.log('date:' + date)
