@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*---------------
+ ------Polices--
+---------------*/
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Regular.ttf') format('ttf');
+}
+
+/*--------------------
+----------------------
+--------------------*/
+
 body {
   background-color: #fcfcfc;
 }
@@ -103,6 +117,24 @@ footer.page-footer {
   right:0;
   margin-left:auto;
   margin-right:auto;
+}
+
+/* ------------------------- */
+/* --- app.firstimage.component.css --- */
+/* -------Pour les autres pages---- */
+
+@media screen and (min-width: 1350px){
+
+  .firstimage {
+    height: 75vh;
+}
+}
+
+@media screen and (max-width: 700px){
+
+  .firstimage {
+    height: 85vh;
+}
 }
 
 /* Pre-registration form */
@@ -414,24 +446,54 @@ text-align:center;
 .logo_lien{
   float: left;
   width: 10%;
-  height: 10%:
+  height: 10%;
 }
 
 /* ------------------------- */
 /* --- Footer --- */
 /* ------------------------- */
 
+#copyright{
+  padding: 0px;
+}
+
 .droits{
   font-family: 'Oswald', sans-serif;
   font-size: 0.8rem;
   line-height: 1.1;
   padding: 15px;
-  width: 80%;
+  width: 90%;
+  margin-bottom: 5px;
+  max-width: initial !important;
 }
 
 #licence{
-  margin-right:10%;
-  color:rgba(255, 255, 255, 0.8) !important;
+  text-align: center;
+}
+
+#licence a{
+    color:rgba(255, 255, 255, 0.9) !important;
+}
+
+@media screen and (max-width: 900px){
+
+  .droits{
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.1;
+    padding: 15px;
+    width: 100%;
+  }
+
+  #licence{
+    text-align: left;
+  }
+}
+
+
+h5 footer{
+  color: #FFFFFF !important;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* ------------------------- */

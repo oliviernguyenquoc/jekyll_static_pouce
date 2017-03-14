@@ -115,7 +115,8 @@ monthArray: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oc
         NEW_DAY_CLASS = 'new',
         TODAY_CLASS = 'now',
         SELECT_CLASS = 'selected',
-        MARK_DAY_HTML = '<i class="dot"></i>',
+        //MARK_DAY_HTML = '<i class="dot"></i>',
+        MARK_DAY_CLASS = 'marked',
         DATE_DIS_TPL = '{year}/<span class="m">{month}</span>',
 
         ITEM_STYLE = 'style="width:{w}px;height:{h}px;line-height:{h}px"',
@@ -319,7 +320,7 @@ monthArray: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oc
                 idt = new Date(y, m - 1, d),
                 data = {
                     w: this.width / 8,
-                    h: this.height / 6.5,
+                    h: this.height / 7 - 5,
                     value: d
                 },
                 markData,
@@ -342,11 +343,13 @@ monthArray: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oc
             data.action = this.getDayAction(idt);
             markData = this.getDayData(idt);
 
+            if(markData) data['class'] += ' ' + MARK_DAY_CLASS;
+
             $item = $(DAY_ITEM_TPL.repeat(data));
 
             if (markData) {
                 $item.data(MARK_DATA, markData);
-                $item.html(d + MARK_DAY_HTML);
+                // $item.html(d + MARK_DAY_HTML);
             }
 
             return $item;
@@ -421,8 +424,8 @@ monthArray: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oc
         getMonthHtml: function () {
             var monthArray = this.options.monthArray,
                 month = [],
-                w = this.width / 4,
-                h = this.height / 3,
+                w = this.width / 4 - 5,
+                h = this.height / 4 - 5,
                 i = 0;
 
             for (; i < 12; i++) {
