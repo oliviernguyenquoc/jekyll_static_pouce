@@ -532,3 +532,15 @@ h5 footer{
 #whatis .calendar-container li{
   font: 500 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+
+/*Classement*/
+.liensclassementtop, .hrclassement {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.liensclassementbot {
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+}
