@@ -232,7 +232,7 @@ $(document).ready(function(){
 	    value: '<b>23h59</b> : Fermeture des inscriptions des participants. C’est le moment où il vaut mieux éviter de faire une soirée pré-départ.'
 	},{
 	    date: '2017-10-01',
-	    value: '<b>7h20</b> : Rendez-vous au point de rencontre pour la distribution des gilets jaunes, la remise des décharges et les derniers points de sécurité. Grosse grosse grosse ambiance !<br /><b>8h00</b> : C’est parti pour la première vague de Pouceux !<br /><b>18h27</b> : D’après Roger, Prague c’est très joli de nuit, qu’est-ce que tu penses de ton aire d’autoroute pourrie ?'
+	    value: '<b>7h20</b> : Rendez-vous au point de rencontre pour la distribution des gilets jaunes, la remise des décharges et les derniers points de sécurité. Grosse grosse grosse ambiance !<br /><br/><b>8h00</b> : C’est parti pour la première vague de Pouceux !<br /><br/><b>18h27</b> : D’après Roger, Prague c’est très joli de nuit, qu’est-ce que tu penses de ton aire d’autoroute pourrie ?'
 	},{
 	    date: '2017-10-02',
 	    value: '<b>13h09</b> : Vous croisez un binôme de Marseille. Sauf qu’eux ils sont à 764 km de chez eux.'
