@@ -123,10 +123,10 @@ footer.page-footer {
 /* --- app.firstimage.component.css --- */
 /* -------Pour les autres pages---- */
 
-@media screen and (min-width: 1350px){
+@media screen and (min-width: 700px){
 
   .firstimage {
-    height: 75vh;
+    height: 85vh;
 }
 }
 
