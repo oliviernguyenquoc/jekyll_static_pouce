@@ -409,24 +409,17 @@ text-align:center;
 /* --- Partenaires --- */
 /* ------------------------- */
 
-.partenaire{
-  width: 100%;
-}
+@media screen and (min-width: 331px) and (max-width: 600px){
 
-.descri_partenaire{
-  padding-top: 4%;
-  text-align: left; /*Contrer l'héritage de "center" */
+  .logo_partenaire_container{
+    text-align: center;
+  }
 
-}
 
-.partenaire.center{
-  margin-top: 3em;
-}
+  .logo_partenaire{
+    max-width: 250px !important;
+  }
 
-.logo_partenaire{
-  float: left;
-  width: 20%;
-  height: 20%:
 }
 
 /* ------------------------- */
