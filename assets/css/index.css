@@ -123,18 +123,8 @@ footer.page-footer {
 /* --- app.firstimage.component.css --- */
 /* -------Pour les autres pages---- */
 
-@media screen and (min-width: 700px){
-
-  .firstimage {
-    height: 85vh;
-}
-}
-
-@media screen and (max-width: 700px){
-
-  .firstimage {
-    height: 85vh;
-}
+.firstimage {
+  height: 85vh;
 }
 
 /* Pre-registration form */
@@ -443,10 +433,22 @@ text-align:center;
 /* --- Liens --- */
 /* ------------------------- */
 
-.logo_lien{
-  float: left;
-  width: 10%;
-  height: 10%;
+@media screen and (max-width: 600px)
+{
+
+  .container_lien{
+    padding: 12px !important;
+  }
+
+  .container_lien_droite{
+    padding: 12px !important;
+    text-align: right;
+  }
+
+  .logo_lien{
+    width: 65%;
+    vertical-align: middle;
+  }
 }
 
 /* ------------------------- */
