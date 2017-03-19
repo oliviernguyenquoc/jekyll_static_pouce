@@ -250,6 +250,14 @@ $(document).ready(function(){
 	    value: 'aujourd\'hui'
 	}];
 
+	// calcul prochain évènement
+	var nextEvent = now;
+	var i = 0;
+	while(nextEvent > new Date(data[i]['date']) && i < 7){
+		i++;
+	}
+	nextEvent = new Date(data[i]['date']);
+
 	var $ca = $('.calendar-container').calendar({
 	    width: 320,
 	    height: 340,
@@ -259,7 +267,7 @@ $(document).ready(function(){
 	    //selectedRang: [new Date(), null],
 	    data: data,
 			label: false,
-			date : new Date(2017,8,21),
+			date : nextEvent,
 	    onSelected: function (view, date, data) {
 	        // console.log('view:' + view)
 	        // console.log('date:' + date)
