@@ -539,3 +539,8 @@ h5 footer{
   padding-bottom: 3vh;
   padding-top: 3vh;
 }
+
+#pageclassement {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
