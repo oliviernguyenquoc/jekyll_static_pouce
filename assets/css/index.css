@@ -5,8 +5,8 @@
 ---------------*/
 
 @font-face {
-    font-family: 'Oswald';
-    src: url('Oswald-Regular.ttf') format('ttf');
+    font-family: 'oswald';
+    src: url(oswald/Oswald-Regular.ttf) format('ttf');
 }
 
 /*--------------------
@@ -18,7 +18,7 @@ body {
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .bullet li{
@@ -26,6 +26,76 @@ p {
   margin-left:15px;
 }
 
+/*--Adaptation de flow-text materialize parce que c'est trop gros et moche---*/
+
+.flow-text-adapt {
+  font-weight: 300; }
+  @media only screen and (min-width: 360px) {
+    .flow-text-adapt {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 390px) {
+    .flow-text-adapt {
+      font-size: 1.224rem; } }
+  @media only screen and (min-width: 420px) {
+    .flow-text-adapt-adapt {
+      font-size: 1.248rem; } }
+  @media only screen and (min-width: 450px) {
+    .flow-text-adapt {
+      font-size: 1.272rem; } }
+  @media only screen and (min-width: 480px) {
+    .flow-text-adapt {
+      font-size: 1.296rem; } }
+  @media only screen and (min-width: 510px) {
+    .flow-text-adapt {
+      font-size: 1.32rem; } }
+  @media only screen and (min-width: 540px) {
+    .flow-text-adapt {
+      font-size: 1.344rem; } }
+  @media only screen and (min-width: 570px) {
+    .flow-text-adapt {
+      font-size: 1.35rem; } }
+  @media only screen and (min-width: 600px) {
+    .flow-text-adapt {
+      font-size: 1.35rem; } }
+  @media only screen and (min-width: 630px) {
+    .flow-text-adapt {
+      font-size: 1.36rem; } }
+  @media only screen and (min-width: 660px) {
+    .flow-text-adapt {
+      font-size: 1.36rem; } }
+  @media only screen and (min-width: 690px) {
+    .flow-text-adapt {
+      font-size: 1.38rem; } }
+  @media only screen and (min-width: 720px) {
+    .flow-text-adapt {
+      font-size: 1.38rem; } }
+  @media only screen and (min-width: 750px) {
+    .flow-text-adapt {
+      font-size: 1.38rem; } }
+  @media only screen and (min-width: 780px) {
+    .flow-text-adapt {
+      font-size: 1.38rem; } }
+  @media only screen and (min-width: 810px) {
+    .flow-text-adapt {
+      font-size: 1.40rem; } }
+  @media only screen and (min-width: 840px) {
+    .flow-text-adapt {
+      font-size: 1.45rem; } }
+  @media only screen and (min-width: 870px) {
+    .flow-text-adapt {
+      font-size: 1.45rem; } }
+  @media only screen and (min-width: 900px) {
+    .flow-text-adapt {
+      font-size: 1.45rem; } }
+  @media only screen and (min-width: 930px) {
+    .flow-text-adapt {
+      font-size: 1.45rem; } }
+  @media only screen and (min-width: 960px) {
+    .flow-text-adapt {
+      font-size: 1.50rem; } }
+  @media only screen and (max-width: 360px) {
+    .flow-text-adapt {
+      font-size: 1.2rem; } }
 
 h4{
   text-overflow: ellipsis;
@@ -404,6 +474,22 @@ text-align:center;
   position: fixed;
 }
 
+/* ------------------------- */
+/* ---Licences-------------- */
+/* ------------------------- */
+
+#detail_technos, #detail_licences, #detail_code_site{
+  font-weight: 400;
+  font-size: 1.0em;
+}
+
+#licences h4{
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 1.2rem 0 0.912rem 0;
+}
+
 
 /* ------------------------- */
 /* --- Partenaires --- */
@@ -453,7 +539,7 @@ text-align:center;
 }
 
 .droits{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'oswald', sans-serif;
   font-size: 0.8rem;
   line-height: 1.1;
   padding: 15px;
@@ -488,7 +574,7 @@ text-align:center;
 
 h5 footer{
   color: #FFFFFF !important;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'oswald', sans-serif;
 }
 
 /* ------------------------- */
