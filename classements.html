@@ -6,8 +6,8 @@ layout: "material"
 	<div id="login">{% include login.html %}</div>
 	<div id="classements">{% include classements/classements_content.html %}</div>
 	<div class="section row" id="signup">{% include signup_modal_form.html %}</div>
-	<div class="row section">
-		<div class="col m2" id="liensclassement">Liens
+	<div class="row section" id="pageclassement">
+		<div class="col m2 striped" id="liensclassement">
 			<ul>
 				<li class="liensclassementtop"><a href="#">Classement 2016</a></li>
 				<li class="liensclassementtop"><a href="#">Classement défis</a></li>
@@ -22,6 +22,84 @@ layout: "material"
 				<li class="liensclassementbot"><a href="#">Classement 2009</a></li>
 
 		</div>
-		<div class="col m10">Reste</div>
+		<div class="col m10">
+
+				<ul class="collapsible col m10 z-depth-2" data-collapsible="accordion">
+					<li>
+						<div class="collapsible-header">
+							1 - Les Pouples d'Or
+							<div class="secondary-content">
+								1581 km - Ensisa Mulhouse
+							</div>
+						</div>
+						<div class="collapsible-body">
+							Arrivée à : <b>Augustown, Pologne</b><br />
+							Soit <b>1581 km</b> depuis <b>Mulhouse, France</b><br />
+							L'équipe a eu <b>0.33h</b> de retard.<br />
+							L'équipe totalise donc <b>1548</b> points.
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							2 - Corentin & Rémi
+							<div class="secondary-content">
+								1308 km - Ecole Centrale de Lyon
+							</div>
+						</div>
+						<div class="collapsible-body">
+							Arrivée à : <b>Wroclaw, Pologne</b><br />
+							Soit <b>1308 km</b> depuis <b>Lyon, France</b><br />
+							L'équipe a eu <b>0h</b> de retard.<br />
+							L'équipe totalise donc <b>1308</b> points.
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							3 - Insarrachés
+							<div class="secondary-content">
+								1253 km - INSA Toulouse
+							</div>
+						</div>
+						<div class="collapsible-body">
+							Arrivée à : <b>Dortmund, Allemagne</b><br />
+							Soit <b>1253 km</b> depuis <b>Toulouse, France</b><br />
+							L'équipe a eu <b>0h</b> de retard.<br />
+							L'équipe totalise donc <b>1253</b> points.
+						</div>
+					</li>
+				</ul>
+
+
+
+			<!--
+			<table class="striped" id="tableclassement">
+				<thead>
+					<tr>
+							<th data-field="id">Name</th>
+							<th data-field="name">Item Name</th>
+							<th data-field="price">Item Price</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Alvin</td>
+						<td>Eclair</td>
+						<td>$0.87</td>
+					</tr>
+					<tr>
+						<td>Alan</td>
+						<td>Jellybean</td>
+						<td>$3.76</td>
+					</tr>
+					<tr>
+						<td>Jonathan</td>
+						<td>Lollipop</td>
+						<td>$7.00</td>
+					</tr>
+				</tbody>
+			</table>
+			-->
+		</div>
 	</div>
 </div>

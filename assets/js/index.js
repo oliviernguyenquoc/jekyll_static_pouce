@@ -250,6 +250,14 @@ $(document).ready(function(){
 	    value: 'aujourd\'hui'
 	}];
 
+	// calcul prochain évènement
+	var nextEvent = now;
+	var i = 0;
+	while(nextEvent > new Date(data[i]['date']) && i < 7){
+		i++;
+	}
+	nextEvent = new Date(data[i]['date']);
+
 	var $ca = $('.calendar-container').calendar({
 	    width: 320,
 	    height: 340,
@@ -259,13 +267,15 @@ $(document).ready(function(){
 	    //selectedRang: [new Date(), null],
 	    data: data,
 			label: false,
-			date : new Date(2017,8,21),
+			date : nextEvent,
 	    onSelected: function (view, date, data) {
 	        // console.log('view:' + view)
 	        // console.log('date:' + date)
 	        // console.log('data:' + data);
 					if(data){
-						document.getElementById('accordion2').children[1].innerHTML='<b>'+dayNames[date.getDay()]+' '+date.getDate()+' '+monthNames[date.getMonth()]+' '+date.getFullYear()+'</b><br/><br/>'+data;
+						var div = document.getElementById('accordion2').children[1];
+						div.innerHTML='<b>'+dayNames[date.getDay()]+' '+date.getDate()+' '+monthNames[date.getMonth()]+' '+date.getFullYear()+'</b><br/><br/>'+data;
+						// div.animate({height:'toggle'});
 					}
 	    },
 	    viewChange: function (view, y, m) {
@@ -273,3 +283,12 @@ $(document).ready(function(){
 	    }
 	});
 });
+
+/*-----------------------------------------------------------------------------------*/
+/*	whatis slider
+/*-----------------------------------------------------------------------------------*/
+
+$(document).ready(function () {
+    // Plugin initialization
+    $('#whatis-right3 .slider').slider({indicators:false,interval:5000});
+})
