@@ -273,7 +273,9 @@ $(document).ready(function(){
 	        // console.log('date:' + date)
 	        // console.log('data:' + data);
 					if(data){
-						document.getElementById('accordion2').children[1].innerHTML='<b>'+dayNames[date.getDay()]+' '+date.getDate()+' '+monthNames[date.getMonth()]+' '+date.getFullYear()+'</b><br/><br/>'+data;
+						var div = document.getElementById('accordion2').children[1];
+						div.innerHTML='<b>'+dayNames[date.getDay()]+' '+date.getDate()+' '+monthNames[date.getMonth()]+' '+date.getFullYear()+'</b><br/><br/>'+data;
+						// div.animate({height:'toggle'});
 					}
 	    },
 	    viewChange: function (view, y, m) {
@@ -281,3 +283,12 @@ $(document).ready(function(){
 	    }
 	});
 });
+
+/*-----------------------------------------------------------------------------------*/
+/*	whatis slider
+/*-----------------------------------------------------------------------------------*/
+
+$(document).ready(function () {
+    // Plugin initialization
+    $('#whatis-right3 .slider').slider({indicators:false,interval:5000});
+})
