@@ -103,7 +103,6 @@ h4{
 }
 
 
-
 /* ------------------------- */
 /* --- app.component.css --- */
 /* ------------------------- */
@@ -497,6 +496,11 @@ text-align:center;
 /* --- Partenaires --- */
 /* ------------------------- */
 
+.carte_partenaire{ /*personnalisation de la carte partenaire materialize*/
+  height: 250px !important;
+  margin-bottom: 2.5rem;
+}
+
 @media screen and (min-width: 331px) and (max-width: 600px){
 
   .logo_partenaire_container{
@@ -509,8 +513,8 @@ text-align:center;
   }
 
 }
-.cadre_partenaire{
-  border-left:4px solid #ffe082;
+  .cadre_partenaire{
+    border-left:4px solid #ffe082;
 }
 
 /* ------------------------- */
