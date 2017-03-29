@@ -491,6 +491,12 @@ text-align:center;
   margin: 1.2rem 0 0.912rem 0;
 }
 
+#licences .parallax-container{
+  position: relative;
+  overflow: hidden;
+  height: 90px; 
+}
+
 
 /* ------------------------- */
 /* --- Partenaires --- */
