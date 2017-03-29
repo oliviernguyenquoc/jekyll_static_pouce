@@ -112,7 +112,7 @@ h4{
 
 /*"Etablissements au départ"+ "Partenaires"*/
 #schools h4{
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 /* ------------------------- */
@@ -465,7 +465,11 @@ text-align:center;
   margin-top: 1em;
 }
 
-
+@media screen and (max-width: 600px){
+  #a0{
+    margin-top: 1.5rem;
+  }
+}
 
 /* ------------------------- */
 /* --- app.signup.component.css --- */
@@ -506,7 +510,7 @@ text-align:center;
 #licences .parallax-container{
   position: relative;
   overflow: hidden;
-  height: 90px;
+  height: 75px;
 }
 
 
