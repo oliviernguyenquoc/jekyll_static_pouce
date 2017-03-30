@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'oswald';
-    src: url(oswald/Oswald-Regular.ttf) format('ttf');
+    src: url(fonts/oswald/Oswald-Regular.ttf) format('ttf');
 }
 
 /*--------------------
@@ -102,7 +102,18 @@ h4{
   overflow: hidden;
 }
 
+/*Gestion des margins page d'accueil*/
 
+/*"Inscris toi à l'édition 2017" */
+#signup h3{
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+}
+
+/*"Etablissements au départ"+ "Partenaires"*/
+#schools h4{
+  margin-bottom: 4rem;
+}
 
 /* ------------------------- */
 /* --- app.component.css --- */
@@ -454,7 +465,11 @@ text-align:center;
   margin-top: 1em;
 }
 
-
+@media screen and (max-width: 600px){
+  #a0{
+    margin-top: 1.5rem;
+  }
+}
 
 /* ------------------------- */
 /* --- app.signup.component.css --- */
@@ -492,10 +507,21 @@ text-align:center;
   margin: 1.2rem 0 0.912rem 0;
 }
 
+#licences .parallax-container{
+  position: relative;
+  overflow: hidden;
+  height: 75px;
+}
+
 
 /* ------------------------- */
 /* --- Partenaires --- */
 /* ------------------------- */
+
+.carte_partenaire{ /*personnalisation de la carte partenaire materialize*/
+  height: 250px !important;
+  margin-bottom: 2.5rem;
+}
 
 @media screen and (min-width: 331px) and (max-width: 600px){
 
@@ -617,7 +643,10 @@ h5 footer{
 }
 
 
-/*Classement*/
+/* ------------------------- */
+/* --- Classements --------- */
+/* ------------------------- */
+
 .liensclassementtop, .hrclassement {
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -631,4 +660,13 @@ h5 footer{
 #pageclassement {
   padding-left: 1vw;
   padding-right: 1vw;
+}
+
+.classement ul{
+  margin-top:0;
+  height:inherit;
+}
+
+.classement ul li{
+  height:inherit;
 }
