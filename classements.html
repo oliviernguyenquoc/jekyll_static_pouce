@@ -3,103 +3,49 @@ layout: "material"
 ---
 
 <div id="core-content">
+	<script>
+		function Onglets(id) {
+			CloseMultiDiv('classement');
+			document.getElementById(id).style.position='relative';
+			document.getElementById(id).style.top='0px';
+			document.getElementById(id).style.left='0px';
+			document.getElementById(id).style.height='100%';
+			document.getElementById(id).style.display='inline';
+		}
+			function CloseMultiDiv(Nom){
+	        for (i=0; i<document.getElementsByTagName('div').length; i++) {
+	            if (document.getElementsByTagName('div').item(i).className == Nom){
+	                document.getElementsByTagName('div').item(i).style.display='none';
+	                document.getElementsByTagName('div').item(i).style.position='absolute';
+									document.getElementsByTagName('div').item(i).style.height='100vh';
+	            }
+	        }
+	    }
+		</script>
 	<div id="login">{% include login.html %}</div>
 	<div id="classements">{% include classements/classements_content.html %}</div>
-	<div class="section row" id="signup">{% include signup_modal_form.html %}</div>
+	<div class="section row" id="signup" display="none">{% include signup_modal_form.html %}</div>
+	<h4 class="center">Classements</h4>
 	<div class="row section" id="pageclassement">
-		<div class="col m2 striped" id="liensclassement">
+		<div class="col m2 striped z-depth-2" id="liensclassement">
 			<ul>
-				<li class="liensclassementtop"><a href="#">Classement 2016</a></li>
-				<li class="liensclassementtop"><a href="#">Classement défis</a></li>
-				<li class="liensclassementtop"><a href="#">Top 25</a></li>
+				<li class="liensclassementtop"><a href="#" onclick="Onglets('classement2016');return false;">Classement 2016</a></li>
+				<li class="liensclassementtop"><a href="#" onclick="Onglets('classementdefis');return false;">Classement défis</a></li>
+				<li class="liensclassementtop"><a href="#" onclick="Onglets('classement25');return false;">Top 25</a></li>
 				<li class="hrclassement"><hr/></li>
-				<li class="liensclassementbot"><a href="#">Classement 2015</a></li>
-				<li class="liensclassementbot"><a href="#">Classement 2014</a></li>
-				<li class="liensclassementbot"><a href="#">Classement 2013</a></li>
-				<li class="liensclassementbot"><a href="#">Classement 2012</a></li>
-				<li class="liensclassementbot"><a href="#">Classement 2011</a></li>
-				<li class="liensclassementbot"><a href="#">Classement 2010</a></li>
-				<li class="liensclassementbot"><a href="#">Classement 2009</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2015');return false;">Classement 2015</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2014');return false;">Classement 2014</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2013');return false;">Classement 2013</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2012');return false;">Classement 2012</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2011');return false;">Classement 2011</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2010');return false;">Classement 2010</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2009');return false;">Classement 2009</a></li>
 
 		</div>
 		<div class="col m10">
-
-				<ul class="collapsible col m10 z-depth-2" data-collapsible="accordion">
-					<li>
-						<div class="collapsible-header">
-							1 - Les Pouples d'Or
-							<div class="secondary-content">
-								1581 km - Ensisa Mulhouse
-							</div>
-						</div>
-						<div class="collapsible-body">
-							Arrivée à : <b>Augustown, Pologne</b><br />
-							Soit <b>1581 km</b> depuis <b>Mulhouse, France</b><br />
-							L'équipe a eu <b>0.33h</b> de retard.<br />
-							L'équipe totalise donc <b>1548</b> points.
-						</div>
-					</li>
-					<li>
-						<div class="collapsible-header">
-							2 - Corentin & Rémi
-							<div class="secondary-content">
-								1308 km - Ecole Centrale de Lyon
-							</div>
-						</div>
-						<div class="collapsible-body">
-							Arrivée à : <b>Wroclaw, Pologne</b><br />
-							Soit <b>1308 km</b> depuis <b>Lyon, France</b><br />
-							L'équipe a eu <b>0h</b> de retard.<br />
-							L'équipe totalise donc <b>1308</b> points.
-						</div>
-					</li>
-					<li>
-						<div class="collapsible-header">
-							3 - Insarrachés
-							<div class="secondary-content">
-								1253 km - INSA Toulouse
-							</div>
-						</div>
-						<div class="collapsible-body">
-							Arrivée à : <b>Dortmund, Allemagne</b><br />
-							Soit <b>1253 km</b> depuis <b>Toulouse, France</b><br />
-							L'équipe a eu <b>0h</b> de retard.<br />
-							L'équipe totalise donc <b>1253</b> points.
-						</div>
-					</li>
-				</ul>
-
-
-
-			<!--
-			<table class="striped" id="tableclassement">
-				<thead>
-					<tr>
-							<th data-field="id">Name</th>
-							<th data-field="name">Item Name</th>
-							<th data-field="price">Item Price</th>
-					</tr>
-				</thead>
-
-				<tbody>
-					<tr>
-						<td>Alvin</td>
-						<td>Eclair</td>
-						<td>$0.87</td>
-					</tr>
-					<tr>
-						<td>Alan</td>
-						<td>Jellybean</td>
-						<td>$3.76</td>
-					</tr>
-					<tr>
-						<td>Jonathan</td>
-						<td>Lollipop</td>
-						<td>$7.00</td>
-					</tr>
-				</tbody>
-			</table>
-			-->
+			<div class="classement" id="classement2016">{% include classements/classement2016.html %}</div>
+			<div class="classement" id="classementdefis" display="none">{% include classements/classementdefis.html %}</div>
+			<div class="classement" id="classement25" display="none">{% include classements/classement25.html %}</div>
 		</div>
 	</div>
 </div>
