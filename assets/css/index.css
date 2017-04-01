@@ -146,6 +146,10 @@ footer.page-footer {
   font-size: 100px;
 }
 
+.slider .indicators .indicator-item.active {
+  background-color: #ff6f00;
+}
+
 /* ------------------------- */
 /* --- app.firstscreen.component.css --- */
 /* ------------------------- */
@@ -441,6 +445,19 @@ text-align:center;
 #schools iframe.twitter-timeline{
   width: 90% !important;
   height: 50vh !important;
+}
+
+/* ------------------------- */
+/* --- app.school-mobile.component.css --- */
+/* ------------------------- */
+
+#school-mobile .slider .slides li img {
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+
+#school-mobile .slider .slides {
+    background-color: #00000000;
 }
 
 /* ------------------------- */
