@@ -146,6 +146,10 @@ footer.page-footer {
   font-size: 100px;
 }
 
+.slider .indicators .indicator-item.active {
+  background-color: #ff6f00;
+}
+
 /* ------------------------- */
 /* --- app.firstscreen.component.css --- */
 /* ------------------------- */
@@ -444,6 +448,19 @@ text-align:center;
 }
 
 /* ------------------------- */
+/* --- app.school-mobile.component.css --- */
+/* ------------------------- */
+
+#school-mobile .slider .slides li img {
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+
+#school-mobile .slider .slides {
+    background-color: #00000000;
+}
+
+/* ------------------------- */
 /* --- app.review.component.css --- */
 /* ------------------------- */
 
@@ -534,9 +551,6 @@ text-align:center;
     max-width: 250px !important;
   }
 
-}
-  .cadre_partenaire{
-    border-left:4px solid #ffe082;
 }
 
 /* ------------------------- */
@@ -663,4 +677,13 @@ h5 footer{
 #pageclassement {
   padding-left: 1vw;
   padding-right: 1vw;
+}
+
+.classement ul{
+  margin-top:0;
+  height:inherit;
+}
+
+.classement ul li{
+  height:inherit;
 }

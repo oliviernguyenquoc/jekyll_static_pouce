@@ -291,5 +291,14 @@ $(document).ready(function(){
 
 $(document).ready(function () {
     // Plugin initialization
-    $('#whatis-right3 .slider').slider({indicators:false,interval:5000});
+    $('#whatis-right3 .slider').slider({interval:4000, height:350});
+})
+
+/*-----------------------------------------------------------------------------------*/
+/*	school-mobile slider
+/*-----------------------------------------------------------------------------------*/
+
+$(document).ready(function () {
+    // Plugin initialization
+    $('#school-mobile .slider').slider({indicators:false, height:280, interval:1000});
 })
