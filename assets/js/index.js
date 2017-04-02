@@ -33,6 +33,7 @@ $(window).bind('scroll', function () {
         menu.removeClass('default').addClass('sticky').fadeIn('fast');
     } else if ($(window).scrollTop() <=  300 && menu.hasClass('sticky'))  {
         menu.removeClass('sticky').addClass('default').fadeIn(0);
+
     }
 });
 
