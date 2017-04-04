@@ -302,3 +302,11 @@ $(document).ready(function () {
     // Plugin initialization
     $('#school-mobile .slider').slider({indicators:false, height:280, interval:1000});
 })
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	numbers-mobile scrollFire
+/*-----------------------------------------------------------------------------------*/
+// TODO : faire marcher ce truc !
+ 	var options = [ {selector: '#numbers-mobile-list', offset: 10, callback: function(el) { Materialize.showStaggeredList($(el)); } }];
+ 	Materialize.scrollFire(options);
