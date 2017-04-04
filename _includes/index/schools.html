@@ -74,15 +74,15 @@
 	</blockquote>
 </div>
 
-<div class="hide-on-large-only" id="school-mobile">
-<h4 class="center">Ecoles Participantes</h4>
-<div class="slider">
-	<ul class="slides">
-    {% for schoolName in site.data.ecoles.name %}
-      <li>
-        <img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="img-responsive">
-      </li>
-  	{% endfor %}
-	</ul>
-</div>
+<div class="col s12 hide-on-large-only" id="school-mobile">
+	<h4 class="center">Ecoles Participantes</h4>
+	<div class="slider">
+		<ul class="slides">
+	    {% for schoolName in site.data.ecoles.name %}
+	      <li>
+	        <img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="img-responsive">
+	      </li>
+	  	{% endfor %}
+		</ul>
+	</div>
 </div>
