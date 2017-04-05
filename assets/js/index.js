@@ -307,6 +307,8 @@ $(document).ready(function () {
 /*-----------------------------------------------------------------------------------*/
 /*	numbers-mobile scrollFire
 /*-----------------------------------------------------------------------------------*/
-// TODO : faire marcher ce truc !
- 	var options = [ {selector: '#numbers-mobile-list', offset: 10, callback: function(el) { Materialize.showStaggeredList($(el)); } }];
+
+ 	var options = [ {selector: '#numbers-mobile-list1', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
+									{selector: '#numbers-mobile-list2', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
+									{selector: '#numbers-mobile-list3', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } }];
  	Materialize.scrollFire(options);
