@@ -26,16 +26,22 @@ $(document).ready(function(){
 /*	STICKY HEADER
 /*-----------------------------------------------------------------------------------*/
 
-var menu = $('#navbar');
-
-$(window).bind('scroll', function () {
-	if ($(window).scrollTop() > 300 && menu.hasClass('default')) {
+function majMenu(){
+	var hauteurImage = $(document.getElementsByClassName('parallax-container').item(0)).height()-(4*$( window ).width()/100)-1;
+	if ($(window).scrollTop() > hauteurImage && menu.hasClass('default')) {
         menu.removeClass('default').addClass('sticky').fadeIn('fast');
-    } else if ($(window).scrollTop() <=  300 && menu.hasClass('sticky'))  {
+    } else if ($(window).scrollTop() <=  hauteurImage && menu.hasClass('sticky'))  {
         menu.removeClass('sticky').addClass('default').fadeIn(0);
 
     }
-});
+}
+
+
+$(document).ready(majMenu);
+
+var menu = $('#navbar');
+
+$(window).bind('scroll', majMenu);
 
 /*-----------------------------------------------------------------------------------*/
 /*	COPY FRONT FORM DATA TO REAL FORM

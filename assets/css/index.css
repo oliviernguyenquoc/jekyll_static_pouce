@@ -259,7 +259,7 @@ footer.page-footer {
 /* ------------------------- */
 
 /* NavBar */
-.menu{
+/*.menu{
   height:4vw;
 }
 nav{
@@ -291,16 +291,18 @@ nav div ul li a{
   text-align: center;
 
 }
-/*
+*/
 #navbar, #navbar_sans_fond{
   position: fixed;
   width: 100%;
   z-index: 1000;
+  height:4vw;
+  line-height: 4vw;
 }
 
 #navbar.default, #navbar_sans_fond.default{
   box-shadow: none;
-  /*padding-top: 10px;    barre au dessus du menu
+  /*padding-top: 10px;    barre au dessus du menu */
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -363,7 +365,7 @@ nav div ul li a{
 }
 
 .menu nav #nav-desktop {
-padding:0;
+padding:0 5vw;
 margin:0;
 list-style:none;
 text-align:center;
@@ -376,14 +378,12 @@ text-align:center;
 }
 
 .menu #logo-container {
-  width : 17%;
+  width : 16vw;
 }
 
 .menu nav {
-  padding-left: 17%;
+  padding-left: 16vw;
 }
-#navcolor {
-  padding-right: 300px;}
 
 #navcolor .nav-wrapper {
   width : 100%;}
@@ -393,25 +393,17 @@ text-align:center;
   margin : auto;
 }
 
-.menuligros {
-  width : 21%;
+#nav-desktop li{
+  width:20%;
 }
-.menulipetit {
-  width : 16%;
-}
-*/
+
 /* Scroll btn */
 .menu .button-collapse {
   color: #ffd54f;
+  height:24px;
 }
 
-/* Logo */
-.menu .brand-logo{
-	padding-left: 25px;
-	/*padding-top: 6px; */
-}
-
-/* SignUp and LogIn Buttons */
+/* SignUp and LogIn Buttons*/
 .menu #header-nav-buttons {
 	position: fixed;
 	right: 0px;
