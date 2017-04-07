@@ -7,6 +7,7 @@ layout: "material"
 		function Onglets(id) {
 			CloseMultiDiv('classement');
 			document.getElementById(id).style.display='inline';
+			document.getElementById('button_mobile_dropdown').text='Classement ' + id;
 		}
 			function CloseMultiDiv(Nom){
 	        for (i=0; i<document.getElementsByTagName('div').length; i++) {
@@ -21,37 +22,57 @@ layout: "material"
 	<div class="section row" id="signup" display="none">{% include signup_modal_form.html %}</div>
 	<h4 class="center">Classements</h4>
 	<div class="row section" id="pageclassement">
-		<div class="col m2 striped z-depth-2" id="liensclassement">
+		<div class="col m2 striped z-depth-2 hide-on-small-only" id="liensclassement">
 			<ul>
-				<li class="liensclassementtop"><a href="#" onclick="Onglets('classement2016');return false;">Classement 2016</a></li>
-				<li class="liensclassementtop"><a href="#" onclick="Onglets('classementdefis');return false;">Classement défis</a></li>
-				<li class="liensclassementtop"><a href="#" onclick="Onglets('classement25');return false;">Top 25</a></li>
+				<li class="liensclassementtop"><a href="#" onclick="Onglets('2016');return false;">Classement 2016</a></li>
+				<li class="liensclassementtop"><a href="#" onclick="Onglets('Defis');return false;">Classement défis</a></li>
+				<li class="liensclassementtop"><a href="#" onclick="Onglets('Top25');return false;">Top 25</a></li>
 				<li class="hrclassement"><hr/></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2013');return false;">Classement 2013</a></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2012');return false;">Classement 2012</a></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2011');return false;">Classement 2011</a></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2010');return false;">Classement 2010</a></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2009');return false;">Classement 2009</a></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2008');return false;">Classement 2008</a></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2006');return false;">Classement 2006</a></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2005');return false;">Classement 2005</a></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2004');return false;">Classement 2004</a></li>
-				<li class="liensclassementbot"><a href="#" onclick="Onglets('classement2003');return false;">Classement 2003</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2013');return false;">Classement 2013</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2012');return false;">Classement 2012</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2011');return false;">Classement 2011</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2010');return false;">Classement 2010</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2009');return false;">Classement 2009</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2008');return false;">Classement 2008</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2006');return false;">Classement 2006</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2005');return false;">Classement 2005</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2004');return false;">Classement 2004</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2003');return false;">Classement 2003</a></li>
+			</ul>
 		</div>
-		<div class="col m10">
-			<div class="classement" id="classement2016">{% include classements/classement2016.html %}</div>
-			<div class="classement" id="classementdefis" style="display:none;">{% include classements/classementdefis.html %}</div>
-			<div class="classement" id="classement25" style="display:none;">{% include classements/classement25.html %}</div>
-			<div class="classement" id="classement2013" style="display:none;">{% include classements/classement2013.html %}</div>
-			<div class="classement" id="classement2012" style="display:none;">{% include classements/classement2012.html %}</div>
-			<div class="classement" id="classement2011" style="display:none;">{% include classements/classement2011.html %}</div>
-			<div class="classement" id="classement2010" style="display:none;">{% include classements/classement2010.html %}</div>
-			<div class="classement" id="classement2009" style="display:none;">{% include classements/classement2009.html %}</div>
-			<div class="classement" id="classement2008" style="display:none;">{% include classements/classement2008.html %}</div>
-			<div class="classement" id="classement2006" style="display:none;">{% include classements/classement2006.html %}</div>
-			<div class="classement" id="classement2005" style="display:none;">{% include classements/classement2005.html %}</div>
-			<div class="classement" id="classement2004" style="display:none;">{% include classements/classement2004.html %}</div>
-			<div class="classement" id="classement2003" style="display:none;">{% include classements/classement2003.html %}</div>
+		<div class="col s12 hide-on-med-and-up row">
+			<a class='dropdown-button btn' href='#' data-activates='dropdown1' id="button_mobile_dropdown">Classement 2016</a>
+			<ul id='dropdown1' class='dropdown-content'>
+				<li class="liensclassementtop"><a href="#" onclick="Onglets('2016');return false;">2016</a></li>
+				<li class="liensclassementtop"><a href="#" onclick="Onglets('Defis');return false;">Défis</a></li>
+				<li class="liensclassementtop"><a href="#" onclick="Onglets('Top25');return false;">Top 25</a></li>
+				<li class="divider"></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2013');return false;">2013</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2012');return false;">2012</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2011');return false;">2011</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2010');return false;">2010</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2009');return false;">2009</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2008');return false;">2008</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2006');return false;">2006</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2005');return false;">2005</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2004');return false;">2004</a></li>
+				<li class="liensclassementbot"><a href="#" onclick="Onglets('2003');return false;">2003</a></li>
+			</ul>
+		</div>
+		<div class="col s12 m10">
+			<div class="classement" id="2016">{% include classements/classement2016.html %}</div>
+			<div class="classement" id="Defis" style="display:none;">{% include classements/classementdefis.html %}</div>
+			<div class="classement" id="Top25" style="display:none;">{% include classements/classement25.html %}</div>
+			<div class="classement" id="2013" style="display:none;">{% include classements/classement2013.html %}</div>
+			<div class="classement" id="2012" style="display:none;">{% include classements/classement2012.html %}</div>
+			<div class="classement" id="2011" style="display:none;">{% include classements/classement2011.html %}</div>
+			<div class="classement" id="2010" style="display:none;">{% include classements/classement2010.html %}</div>
+			<div class="classement" id="2009" style="display:none;">{% include classements/classement2009.html %}</div>
+			<div class="classement" id="2008" style="display:none;">{% include classements/classement2008.html %}</div>
+			<div class="classement" id="2006" style="display:none;">{% include classements/classement2006.html %}</div>
+			<div class="classement" id="2005" style="display:none;">{% include classements/classement2005.html %}</div>
+			<div class="classement" id="2004" style="display:none;">{% include classements/classement2004.html %}</div>
+			<div class="classement" id="2003" style="display:none;">{% include classements/classement2003.html %}</div>
 		</div>
 	</div>
 </div>

@@ -318,3 +318,18 @@ $(document).ready(function () {
 									{selector: '#numbers-mobile-list2', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
 									{selector: '#numbers-mobile-list3', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } }];
  	Materialize.scrollFire(options);
+
+/*-----------------------------------------------------------------------------------*/
+/*	classement dropdown version mobile
+/*-----------------------------------------------------------------------------------*/
+$('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: false, // Does not change width of dropdown to that of the activator
+      hover: false, // Desactivate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
