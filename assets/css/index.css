@@ -259,39 +259,6 @@ footer.page-footer {
 /* ------------------------- */
 
 /* NavBar */
-/*.menu{
-  height:4vw;
-}
-nav{
-  height:4vw;
-  line-height:4vw;
-  position:fixed;
-}
-
-nav div{
-
-  position:static;
-}
-
-nav div ul{
-  width:80vw;
-  position:static;
-}
-
-nav div ul li{
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  width:20%;
-  position:static;
-  display:inline;
-    margin:auto;
-}
-nav div ul li a{
-  position: static;
-  text-align: center;
-
-}
-*/
 #navbar, #navbar_sans_fond{
   position: fixed;
   width: 100%;
@@ -302,7 +269,6 @@ nav div ul li a{
 
 #navbar.default, #navbar_sans_fond.default{
   box-shadow: none;
-  /*padding-top: 10px;    barre au dessus du menu */
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -400,7 +366,7 @@ text-align:center;
 /* Scroll btn */
 .menu .button-collapse {
   color: #ffd54f;
-  height:24px;
+  background: rgba(255,255,255,0.1);
 }
 
 /* SignUp and LogIn Buttons*/
