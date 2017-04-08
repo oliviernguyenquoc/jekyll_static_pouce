@@ -21,6 +21,10 @@ p {
   line-height: 1.6;
 }
 
+strong{
+  font-weight: 400;
+}
+
 .bullet li{
   list-style-type: disc;
   margin-left:15px;
@@ -446,25 +450,38 @@ text-align:center;
     background-color: #00000000;
 }
 
-/*
-@media screen and (max-width: 364px) and (min-width: 300px) {
-  #btn_inscription_school_small{
-    height: 50px;
-    line-height: 25px;
+@media screen and (min-width: 500px){
+
+  #inscrire_etablissement{
+    float: right;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffb300 !important;
   }
 }
 
-@media screen and (max-width: 300px){
-  #btn_inscription_school_small{
-    height: 50px;
-    line-height: 25px;
+@media screen and (max-width: 500px) and (min-width: 360px){
+
+  #inscrire_etablissement{
+    display: block;
+    width: 290px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffb300 !important;
   }
 }
-*/
 
-#inscrire_etablissement{
-  font-weight: 400;
-  color: #ffb300 !important;
+@media screen and (max-width: 360px){
+
+  #inscrire_etablissement{
+    display: block;
+    width: 225px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffb300 !important;
+  }
 }
 
 /* ------------------------- */
