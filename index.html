@@ -2,6 +2,7 @@
 layout: "material"
 ---
 
+
 <div id="core-content">
 	<div id="login">{% include login.html %}</div>
 	<div id="firstscreen">{% include index/firstscreen.html %}</div>
@@ -12,3 +13,9 @@ layout: "material"
 	<div class="section section_small row" id="schools">{% include index/schools.html %}</div>
 	<!--<div class="section section_small row" id="partenaires">{% include index/partenaires.html %}</div>-->
 </div>
+<script>
+function truc () {
+	$(document.getElementsByClassName('parallax-container').item(0)).height($(document.getElementsByClassName('parallax-container').item(0)).height() + 3);
+}
+	$(document).ready(truc);
+</script>
