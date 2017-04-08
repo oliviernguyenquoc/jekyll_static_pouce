@@ -317,9 +317,9 @@ $(document).ready(function () {
 /*	numbers-mobile scrollFire
 /*-----------------------------------------------------------------------------------*/
 
- 	var options = [ {selector: '#numbers-mobile-list1', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
-									{selector: '#numbers-mobile-list2', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
-									{selector: '#numbers-mobile-list3', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } }];
+ 	var options = [ {selector: '#numbers-list1', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
+									{selector: '#numbers-list2', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
+									{selector: '#numbers-list3', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } }];
  	Materialize.scrollFire(options);
 
 /*-----------------------------------------------------------------------------------*/

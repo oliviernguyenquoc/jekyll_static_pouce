@@ -702,3 +702,24 @@ li.recommandation{
 .classement ul li{
   height:inherit;
 }
+
+/* ------------------------- */
+/* --- index numbers ------- */
+/* ------------------------- */
+
+#numbers ul{
+  margin:0 0 0 0;
+}
+#numbers ul li div{
+  width:100%;
+  background-size: cover;
+}
+#numbers-record{
+  background: url("img/numbers/record.png") no-repeat center;
+}
+#numbers-participant{
+  background: url("img/numbers/depart.png") no-repeat center;
+}
+#numbers-monde{
+  background: url("img/numbers/monde.png") no-repeat center;
+}
