@@ -446,6 +446,7 @@ text-align:center;
     background-color: #00000000;
 }
 
+/*
 @media screen and (max-width: 364px) and (min-width: 300px) {
   #btn_inscription_school_small{
     height: 50px;
@@ -458,6 +459,12 @@ text-align:center;
     height: 50px;
     line-height: 25px;
   }
+}
+*/
+
+#inscrire_etablissement{
+  font-weight: 400;
+  color: #ffb300 !important;
 }
 
 /* ------------------------- */
