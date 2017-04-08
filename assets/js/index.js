@@ -319,7 +319,10 @@ $(document).ready(function () {
 
  	var options = [ {selector: '#numbers-list1', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
 									{selector: '#numbers-list2', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
-									{selector: '#numbers-list3', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } }];
+									{selector: '#numbers-list3', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
+									{selector: '#numbers-list1-mobile', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
+									{selector: '#numbers-list2-mobile', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } },
+									{selector: '#numbers-list3-mobile', offset: 200, callback: function(el) { Materialize.showStaggeredList($(el)); } }];
  	Materialize.scrollFire(options);
 
 /*-----------------------------------------------------------------------------------*/
