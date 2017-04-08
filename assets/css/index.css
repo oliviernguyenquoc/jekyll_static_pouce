@@ -681,7 +681,14 @@ li.recommandation{
   padding-top:5px;
   padding-bottom:5px;
 }
+/* ------------------------- */
+/* - Dates à ne pas manquer- */
+/* ------------------------- */
 
+p.dates{
+  margin-top:18px !important;
+  margin-bottom:0px !important;
+}
 
 /* ------------------------- */
 /* --- Classements --------- */
