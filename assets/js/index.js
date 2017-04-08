@@ -232,25 +232,28 @@ $(document).ready(function(){
 	];
 
 	var data = [{
-	    date: '2017-09-21',
+	    date: '2017-09-20',
 	    value: 'Ouverture des inscriptions des participants.'
 	},{
+	    date: '2017-09-29',
+	    value: '<b>23h59min59s</b> : Fermeture des inscriptions des participants. C’est le moment où il vaut mieux éviter de faire une soirée pré-départ.'
+	},{
 	    date: '2017-09-30',
-	    value: '<b>23h59</b> : Fermeture des inscriptions des participants. C’est le moment où il vaut mieux éviter de faire une soirée pré-départ.'
+	    value: '<b>7h20</b> : Rendez-vous au point de rencontre pour la distribution des gilets jaunes, la remise des décharges et les derniers points de sécurité. Grosse grosse grosse ambiance !<br /><br/><b>8h00</b> : C’est parti pour la première vague de Pouceux !<br /><br/><b>18h27</b> : Tu vois sur facebook que certains admirent l\'architecture d\'Amsterdam. Puis tu lèves les yeux et admires ton binôme sous la pluie de ton aire d\'autoroute pourrie...'
 	},{
 	    date: '2017-10-01',
-	    value: '<b>7h20</b> : Rendez-vous au point de rencontre pour la distribution des gilets jaunes, la remise des décharges et les derniers points de sécurité. Grosse grosse grosse ambiance !<br /><br/><b>8h00</b> : C’est parti pour la première vague de Pouceux !<br /><br/><b>18h27</b> : D’après Roger, Prague c’est très joli de nuit, qu’est-ce que tu penses de ton aire d’autoroute pourrie ?'
+	    value: '<b>16h09</b> : Vous croisez un binôme de Marseille. Sauf qu’eux ils sont à 764 km de chez eux. Vous leur demandez quel cours ils ratent le lendemain.'
 	},{
 	    date: '2017-10-02',
-	    value: '<b>13h09</b> : Vous croisez un binôme de Marseille. Sauf qu’eux ils sont à 764 km de chez eux.'
-	},{
-	    date: '2017-10-03',
 	    value: '<b>8h00</b> : La plupart des Pouceux sont rentrés et vont mécaniquement en amphi. Y’en a deux qui sont encore bloqués à Strasbourg, ce sont des héros.'
 	},{
-	    date: '2017-10-10',
-	    value: '<b>8h00</b> : Fin du Pouce d’Or 2016, tout le monde raconte ses anecdotes !! Vous avez jusqu’au 15 septembre pour valider vos parcours sur le site internet, y déclarer vos retards et y raconter votre aventure !'
+	    date: '2017-10-07',
+	    value: '<b>8h00</b> : La deuxième vague de Pouceux est en route !! Il ont beau temps, tu rages.'
 	},{
-	    date: '2018-02-09',
+			date: '2017-10-09',
+			value: '<b>8h00</b> : Fin du Pouce d’Or 2016, tout le monde raconte ses anecdotes !! Vous avez jusqu’au 14 septembre pour valider vos parcours sur le site internet, y déclarer vos retards et y raconter votre aventure !'
+	},{
+	    date: '2018-02-08',
 	    value: 'Ouaaaaais y’a le classement en ligne !!!'
 	},{
 	    date: year + '-' + month + '-' + date,
