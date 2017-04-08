@@ -28,6 +28,7 @@ $(document).ready(function(){
 
 function majMenu(){
 	var hauteurImage = $(document.getElementsByClassName('parallax-container').item(0)).height()-(4*$( window ).width()/100)-1;
+	var menu = $('#navbar');
 	if ($(window).scrollTop() > hauteurImage && menu.hasClass('default')) {
         menu.removeClass('default').addClass('sticky').fadeIn('fast');
     } else if ($(window).scrollTop() <=  hauteurImage && menu.hasClass('sticky'))  {
@@ -38,8 +39,6 @@ function majMenu(){
 
 
 $(document).ready(majMenu);
-
-var menu = $('#navbar');
 
 $(window).bind('scroll', majMenu);
 
