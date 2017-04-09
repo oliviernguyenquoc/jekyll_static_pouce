@@ -465,7 +465,7 @@ text-align:center;
     background-color: #00000000;
 }
 
-@media screen and (min-width: 500px){
+/*@media screen and (min-width: 500px){
 
   #inscrire_etablissement{
     float: right;
@@ -497,7 +497,7 @@ text-align:center;
     font-size: 16px;
     color: #ffb300 !important;
   }
-}
+}*/
 
 /* ------------------------- */
 /* --- app.review.component.css --- */
