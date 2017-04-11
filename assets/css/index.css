@@ -442,16 +442,6 @@ text-align:center;
   width: 100%;
 }
 
-#schools a.twitter-timeline{
-  text-align: center;
-
-}
-
-#schools iframe.twitter-timeline{
-  width: 90% !important;
-  height: 50vh !important;
-}
-
 /* ------------------------- */
 /* --- app.school-mobile.component.css --- */
 /* ------------------------- */
@@ -465,6 +455,9 @@ text-align:center;
     background-color: #00000000;
 }
 
+#school-mobile .slider {
+    background-color: #00000000;
+}
 /*@media screen and (min-width: 500px){
 
   #inscrire_etablissement{
