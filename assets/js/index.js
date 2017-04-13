@@ -271,7 +271,7 @@ $(document).ready(function(){
 	    width: 320,
 	    height: 340,
 			startWeek: 1,
-    	weekArray: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sat'],
+    	weekArray: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
     	monthArray: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aout', 'Sep', 'Oct', 'Nov', 'Dec'],
 	    //selectedRang: [new Date(), null],
 	    data: data,
