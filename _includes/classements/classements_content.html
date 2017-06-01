@@ -40,25 +40,27 @@
 		</ul>
 	</div>
 	<div class="col s12 hide-on-med-and-up row">
-		<a class='dropdown-button btn' href='#' data-activates='dropdown1' id="button_mobile_dropdown">Classement 2016</a>
-		<ul id='dropdown1' class='dropdown-content'>
-			<li class="liensclassementtop"><a href="#" onclick="Onglets('2016');return false;">2016</a></li>
-			<li class="liensclassementtop"><a href="#" onclick="Onglets('Defis');return false;">Défis</a></li>
-			<li class="liensclassementtop"><a href="#" onclick="Onglets('Top25');return false;">Top 25</a></li>
-			<li class="divider"></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2015');return false;">2015</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2014');return false;">2014</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2013');return false;">2013</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2012');return false;">2012</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2011');return false;">2011</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2010');return false;">2010</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2009');return false;">2009</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2008');return false;">2008</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2006');return false;">2006</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2005');return false;">2005</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2004');return false;">2004</a></li>
-			<li class="liensclassementbot"><a href="#" onclick="Onglets('2003');return false;">2003</a></li>
-		</ul>
+		<select onChange="Onglets(this.value);return false;">
+			<optgroup label="Derniers classements">
+				<option value="2016">2016</option>
+				<option value="Defis">Défis</option>
+				<option value="Top25">Top 25</option>
+			</optgroup>
+			<optgroup label="Archives">
+				<option value="2015">2015</option>
+				<option value="2014">2014</option>
+				<option value="2013">2013</option>
+				<option value="2012">2012</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+				<option value="2008">2008</option>
+				<option value="2006">2006</option>
+				<option value="2005">2005</option>
+				<option value="2004">2004</option>
+				<option value="2003">2003</option>
+			</optgroup>
+		</select>
 	</div>
 	<div class="col s12 m10">
 		<div class="classement" id="2016">{% include classements/classement2016.html %}</div>
