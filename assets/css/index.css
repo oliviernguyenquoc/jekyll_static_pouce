@@ -170,9 +170,9 @@ footer.page-footer {
   background-color: #ff6f00;
 }
 
-/* ------------------------- */
+/* ------------------------------------- */
 /* --- app.firstscreen.component.css --- */
-/* ------------------------- */
+/* ------------------------------------- */
 
 #firstscreen .parallax-container {
 	min-height: 380px;
@@ -223,9 +223,9 @@ footer.page-footer {
   margin-right:auto;
 }
 
-/* ------------------------- */
+/* ------------------------------------ */
 /* --- app.firstimage.component.css --- */
-/* -------Pour les autres pages---- */
+/* -------Pour les autres pages-------- */
 
 .firstimage {
   height: 85vh;
@@ -273,9 +273,9 @@ footer.page-footer {
   color: red;
 }
 
-/* ------------------------- */
+/* ------------------------------ */
 /* --- app.menu.component.css --- */
-/* ------------------------- */
+/* ------------------------------ */
 
 /* NavBar */
 #navbar, #navbar_sans_fond{
@@ -286,25 +286,25 @@ footer.page-footer {
   line-height: 4vw;
 }
 
-#navbar.default, #navbar_sans_fond.default{
+/*#navbar.default, #navbar_sans_fond.default{
   box-shadow: none;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-}
+}*/
 
-#navbar.default #header-nav-buttons, #navbar_sans_fond.default #header-nav-buttons {
+/*#navbar.default #header-nav-buttons, #navbar_sans_fond.default #header-nav-buttons {
   top: 14px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-}
+}*/
 
-#navbar.default a.btn-connexion, #navbar.default nav ul li a,
+/*#navbar.default a.btn-connexion, #navbar.default nav ul li a,
 #navbar_sans_fond.default a.btn-connexion, #navbar_sans_fond.default nav ul li a {
   color: white;
   -webkit-transition: all 0.4s;
@@ -312,7 +312,7 @@ footer.page-footer {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-}
+}*/
 
 #navbar.sticky, #navbar_sans_fond.sticky {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -324,14 +324,14 @@ footer.page-footer {
   transition: all 0.4s;
 }
 
-#navbar.sticky #header-nav-buttons, #navbar_sans_fond.sticky #header-nav-buttons {
+/*#navbar.sticky #header-nav-buttons, #navbar_sans_fond.sticky #header-nav-buttons {
   top: 14px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-}
+}*/
 
 #navbar.sticky a.btn-connexion, #navbar.sticky nav ul li a,
 #navbar_sans_fond.sticky a.btn-connexion, #navbar_sans_fond.sticky nav ul li a {
@@ -353,13 +353,14 @@ footer.page-footer {
 padding:0 5vw;
 margin:0;
 list-style:none;
-text-align:center;
 width : 100%;
 display:inline-block;
 }
+
 .menu nav #nav-desktop li{
 position:relative;
 text-align:center;
+width:20%;
 }
 
 .menu #logo-container {
@@ -374,14 +375,10 @@ text-align:center;
 #navcolor .nav-wrapper {
   width : 100%;}
 
-#logo-container {
+/*#logo-container {
   height : 100%;
   margin : auto;
-}
-
-#nav-desktop li{
-  width:20%;
-}
+}*/
 
 /* Scroll btn */
 .menu .button-collapse {
@@ -389,7 +386,7 @@ text-align:center;
   background: rgba(255,255,255,0.1);
 }
 
-/* SignUp and LogIn Buttons*/
+/* SignUp and LogIn Buttons
 .menu #header-nav-buttons {
 	position: fixed;
 	right: 0px;
@@ -410,15 +407,15 @@ text-align:center;
 	border-radius: 2px;
 	text-transform: none;
 }
-
+*/
 .menu .side-nav{
   padding: 0 40px;
   z-index: 1000;
 }
 
-/* ------------------------- */
+/* ------------------------------------ */
 /* --- app.restscreen.component.css --- */
-/* ------------------------- */
+/* ------------------------------------ */
 
 #block3parts{
   width: 80%;
@@ -442,9 +439,9 @@ text-align:center;
   width: 100%;
 }
 
-/* ------------------------- */
+/* --------------------------------------- */
 /* --- app.school-mobile.component.css --- */
-/* ------------------------- */
+/* --------------------------------------- */
 
 #school-mobile .slider .slides li img {
     background-size:100% auto;
@@ -492,9 +489,9 @@ text-align:center;
   }
 }*/
 
-/* ------------------------- */
+/* -------------------------------- */
 /* --- app.review.component.css --- */
-/* ------------------------- */
+/* -------------------------------- */
 
 .review{
   width: 100%;
@@ -520,9 +517,9 @@ text-align:center;
   }
 }
 
-/* ------------------------- */
+/* -------------------------------- */
 /* --- app.signup.component.css --- */
-/* ------------------------- */
+/* -------------------------------- */
 
 #signup{
 	width: 80%;
@@ -567,9 +564,9 @@ text-align:center;
   top: 80px;
 }
 
-/* ------------------------- */
+/* ------------------- */
 /* --- Partenaires --- */
-/* ------------------------- */
+/* ------------------- */
 
 .carte_partenaire{ /*personnalisation de la carte partenaire materialize*/
   height: 250px !important;
@@ -593,9 +590,9 @@ text-align:center;
 
 }
 
-/* ------------------------- */
+/* ------------- */
 /* --- Liens --- */
-/* ------------------------- */
+/* ------------- */
 
 @media screen and (max-width: 600px)
 {
@@ -623,9 +620,9 @@ text-align:center;
   padding:1vw !important;
 }
 
-/* ------------------------- */
+/* -------------- */
 /* --- Footer --- */
-/* ------------------------- */
+/* -------------- */
 
 #copyright{
   padding: 0px;
@@ -676,9 +673,9 @@ h5 footer{
   font-family: 'oswald', sans-serif;
 }
 
-/* ------------------------- */
+/* -------------------------------- */
 /* --- app.whatis.component.css --- */
-/* ------------------------- */
+/* -------------------------------- */
 
 #whatis .parallax-container {
   height: 700px;
