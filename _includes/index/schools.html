@@ -41,13 +41,14 @@
 		<!-- Else it's the last row but not the first image-->
 		{% elsif loopindex != 1 and forloop.index != 0 and forloop.rindex < 6 %}
 			<div class="col s12 m2 no-margin-left">
-				{% img ecoles/{{schoolName}} class:"responsive-img valign" magick:resize:150x150 %}
+				<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
+
 			</div>
 
 		<!-- Else it's not the last row -->
 		{% else %}
 			<div class="col s12 m2">
-				{% img ecoles/{{schoolName}} class:"responsive-img valign" magick:resize:150x150 %}
+				<img src="/{{ site.data.ecoles.schoolfolder }}/{{ schoolName }}" class="responsive-img valign">
 
 			</div>
 		{% endif %}
