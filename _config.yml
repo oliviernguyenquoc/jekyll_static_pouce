@@ -1,6 +1,7 @@
 exclude:
   - "/bower_components/"
   - "bower.json"
+  - "*.inutile"
 
 gems: [jekyll-assets, uglifier, jekyll-admin, mini_magick]
 
