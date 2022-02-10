@@ -29,7 +29,7 @@ Advices: (source: https://www.aerobatic.com/blog/jekyll-assets-bootstrap)
 	* Unix: http://imagemagick.org/script/binary-releases.php#unix
 * Install the Imagemagick plugin 'gem install mini_magick'
 
-# How to add a school in the school list
+## How to add a school in the school list
 
 * Add the .png or .jpg file in assets/img/ecoles folder
 * Add in the data list in _data/ecoles.yml
@@ -39,12 +39,12 @@ Advices: (source: https://www.aerobatic.com/blog/jekyll-assets-bootstrap)
 
 * Make sure that all required gem packages are installed : 'bundle install'
 
-# Run local server
+### Run local server
 
 * Execute : 'bundle exec jekyll serve'
 * The website is available at 'http://localhost:4000'
 
-# Build the final website
+### Build the final website
 
 * Execute : 'bundle exec jekyll build'
 * The website is generated in the folder '_site'
